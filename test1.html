@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO 與社群分享標籤 (Open Graph) -->
+    <meta name="description" content="為同行家人與小寶貝量身打造的超舒適日本富士山與郵輪之旅，包含輕鬆不趕路的專車接送、私房美景與在地美食！">
+    <meta property="og:title" content="富士山・郵輪 家族美好時光 | 專屬行程表">
+    <meta property="og:description" content="為同行家人與小寶貝量身打造的超舒適日本之旅！內含每日詳細路線與互動地圖導航。">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1200&auto=format&fit=crop">
+    <meta property="og:type" content="website">
+    
+    <!-- 網頁圖示 (Favicon) - 使用富士山 Emoji -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗻</text></svg>">
+    
+    <title>富士山・郵輪 家族美好時光 | 專屬行程表</title>
+    <style>
+        /* 基礎設定與柔和色彩配置 */
+        :root {
+            --primary-color: #5B8B9E; /* 富士藍 */
+            --secondary-color: #E8F0F2; /* 柔和背景色 */
+            --text-main: #333333;
+            --text-muted: #666666;
+            --card-bg: #FFFFFF;
+            --accent-color: #D9A05B; /* 溫暖木質調 */
+            --map-color: #4285F4; /* Google地圖藍 */
+        }
+
+        html {
+            scroll-behavior: smooth; /* 平滑滾動 */
+            scroll-padding-top: 70px; /* 避免導覽列遮擋標題 */
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, 'PingFang TC', 'Heiti TC', 'Microsoft JhengHei', sans-serif;
+            background-color: var(--secondary-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* 頂部橫幅 */
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1200&auto=format&fit=crop') center/cover;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        header p {
+            margin-top: 15px;
+            font-size: 18px;
+            opacity: 0.9;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        /* 快速導覽列 (Sticky Navigation) */
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(5px);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 12px 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-bottom: 1px solid #E8F0F2;
+        }
+
+        .sticky-nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+            padding: 6px 12px;
+            border-radius: 20px;
+            transition: background-color 0.2s, color 0.2s;
+            font-size: 15px;
+        }
+
+        .sticky-nav a:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        /* 內容容器 */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 每一天的區塊 */
+        .day-section {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed #CBDCDE;
+        }
+        
+        .day-section:last-child {
+            border-bottom: none;
+        }
+
+        /* 標題與收合功能 */
+        .day-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            cursor: pointer;
+            user-select: none;
+            transition: filter 0.2s ease;
+        }
+
+        .day-header:hover {
+            filter: brightness(1.1);
+        }
+
+        .toggle-icon {
+            margin-left: 15px;
+            font-size: 14px;
+        }
+
+        /* 收合內容區塊 */
+        .day-content {
+            display: block;
+        }
+
+        .day-content.collapsed {
+            display: none;
+        }
+
+        /* 行程卡片排版 */
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s ease;
+        }
+
+        .card:active {
+            transform: scale(0.98);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            background-color: #EEEEEE;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .time-badge {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .card-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            color: var(--primary-color);
+        }
+
+        .card-desc {
+            margin: 0;
+            color: var(--text-muted);
+            font-size: 15px;
+        }
+
+        /* 備註小標籤 */
+        .note {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #FFF9E6;
+            border-left: 4px solid var(--accent-color);
+            font-size: 14px;
+            border-radius: 0 4px 4px 0;
+        }
+
+        /* 地圖按鈕與嵌入地圖區域 */
+        .map-link-container {
+            text-align: center;
+            margin: 10px 0 30px 0;
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .map-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--map-color);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 0 4px 8px rgba(66, 133, 244, 0.3);
+            transition: background-color 0.3s, transform 0.2s;
+            width: 80%;
+            max-width: 350px;
+            margin-bottom: 15px;
+        }
+
+        .map-btn:hover, .map-btn:active {
+            background-color: #3367D6;
+            transform: translateY(-2px);
+        }
+
+        .map-btn span {
+            margin-right: 8px;
+            font-size: 20px;
+        }
+
+        .map-iframe {
+            width: 100%;
+            height: 350px;
+            border: 0;
+            border-radius: 8px;
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+            background-color: #E8F0F2;
+        }
+
+        /* 回到頂部按鈕 */
+        #backToTop {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: none;
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 999;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        #backToTop:hover {
+            transform: translateY(-3px);
+            background-color: #c48c4a;
+        }
+
+        /* 底部 */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        /* 平板以上尺寸的微調 */
+        @media (min-width: 600px) {
+            .card {
+                flex-direction: row;
+            }
+            .card-img {
+                width: 35%;
+                height: auto;
+                min-height: 200px;
+            }
+            .card-content {
+                width: 65%;
+            }
+            .sticky-nav {
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header id="top">
+        <h1>富士山・郵輪 家族美好時光</h1>
+        <p>為同行家人與小寶貝量身打造的超舒適之旅</p>
+    </header>
+
+    <!-- 快速導覽列 -->
+    <nav class="sticky-nav">
+        <a href="#day1">Day 1</a>
+        <a href="#day2">Day 2</a>
+        <a href="#day3">Day 3</a>
+        <a href="#day4">Day 4</a>
+    </nav>
+
+    <div class="container">
+        
+        <!-- Day 1 -->
+        <div class="day-section" id="day1">
+            <div class="day-header" onclick="toggleSection('day1-content', this)">
+                Day 1：6/6 (週六) 抵達與專屬壽喜燒之夜 
+                <span class="toggle-icon">▲</span>
+            </div>
+            
+            <div class="day-content" id="day1-content">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=800&auto=format&fit=crop" alt="成田機場會合" class="card-img" width="800" height="600" loading="lazy">
+                    <div class="card-content">
+                        <div class="time-badge">14:00 - 15:30</div>
+                        <h2 class="card-title">順利會合與通關</h2>
+                        <p class="card-desc">在成田機場領取行李，兩批人馬開心會合！準備開啟優雅的日本之旅。</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?q=80&w=800&auto=format&fit=crop" alt="輕量補給" class="card-img" width="800" height="600" loading="lazy">
+                    <div class="card-content">
+                        <div class="time-badge">15:30 - 16:00</div>
+                        <h2 class="card-title">輕量補給與優雅上車</h2>
+                        <p class="card-desc">不用趕去餐廳人擠人。派壯丁去機場超商買齊飲料、水、與家人愛吃的點心，順便準備簡易早餐就直接上車！</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://www.japanholiday.net/wp-content/uploads/2024/03/fuji-gran-villa-toki2.jpg" alt="包車直達 Fuji Gran Villa" class="card-img" width="800" height="600" loading="lazy">
+                    <div class="card-content">
+                        <div class="time-badge">16:00 - 19:00</div>
+                        <h2 class="card-title">包車直達 Fuji Gran Villa - TOKI -</h2>
+                        <p class="card-desc">提早出發！大家在車上安穩補眠。日本休息站非常舒適，家人如有需要隨時可請司機大哥停靠活動筋骨。</p>
+                        <div class="note">小嵐叮嚀：提早抵達可以更從容地辦理入住手續，認識一下這幾天要住的美麗別墅。</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://fujigran.toki223.com/cms/wp-content/themes/fuji/img/food/option_img8.jpg?250805" alt="壽喜燒晚餐" class="card-img" width="800" height="600" loading="lazy">
+                    <div class="card-content">
+                        <div class="time-badge">19:30 - </div>
+                        <h2 class="card-title">專屬的溫馨壽喜燒之夜</h2>
+                        <p class="card-desc">抵達別墅辦理入住後，全家人聚在客廳，享用飯店準備好的壽喜燒。配上稍早買的甜點飲料，這就是最完美的接風宴！</p>
+                    </div>
+                </div>
+
+                <div class="map-link-container">
+                    <a href="https://www.google.com/maps/dir/成田國際機場/Fuji+Gran+Villa+-+TOKI+-/" target="_blank" class="map-btn">
+                        <span>📍</span> 開啟 Day 1 行程導航地圖
+                    </a>
+                    <iframe 
+                        class="map-iframe" 
+                        src="https://maps.google.com/maps?saddr=成田國際機場&daddr=Fuji+Gran+Villa+-+TOKI+-&output=embed" 
+                        title="Day 1 導航地圖"
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 2 -->
+        <div class="day-section" id="day2">
+            <div class="day-header" onclick="toggleSection('day2-content', this)">
+                Day 2：6/7 (週日) 經典湖畔日：絕景打卡與超夢幻富士山吐司
+                <span class="toggle-icon">▲</span>
+            </div>
+            
+            <div class="day-content" id="day2-content">
+                <div class="card">
+                    <img src="https://static.gltjp.com/glt/data/directory/13000/12079/20210826_141254_3028f3a9_w1920.webp" alt="富士山景觀纜車與天晴號" class="card-img" width="800" height="600" loading="lazy">
+                    <div class="card-content">
+                        <div class="time-badge">09:30 - 11:15</div>
+                        <h2 class="card-title">悠閒出發 ＆ 景觀纜車 ＋ 天晴號</h2>
+                        <p class="card-desc">從別墅睡飽後出發，開啟美好的一天！早晨的富士山能見度通常是最好的！我們一早先去搭乘纜車和遊覽船，從高處與湖面兩個不同的絕佳視角，把壯麗的富士山全景盡收眼底。</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://s.yimg.com/ny/api/res/1.2/LpJhlgUTo5j9k8500oE.Ow--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTgwMA--/https://media.zenfs.com/en/homita_556/409873cec4793ffea7f178fbbde6d120" alt="富士山吐司 FUJISAN SHOKUPAN" class="card-img" width="800" height="600" loading="lazy">
+                    <div class="card-content">
+                        <div class="time-badge">11:15 - 11:35</div>
+                        <h2 class="card-title">🍞 私房安插：食パン専門店 FUJISAN SHOKUPAN</h2>
+                        <p class="card-desc">搭完船後順路直奔思璇指定的這家麵包店！這時候剛開店不久，不僅品項最齊全，還能第一時間搶到剛出爐的藍白相間「富士山吐司」。買完直接提上車，麵包的香氣絕對會讓大家充滿幸福感！</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://img.bigfang.tw/2025/04/1744638082-4efdd2f969559e8b1c92e99f32ded48e.jpg" alt="ほうとう不動" class="card-img" width="800" height="600" loading="lazy">
+                    <div class="card-content">
+                        <div class="time-badge">11:45 - 13:30</div>
+                        <h2 class="card-title">午餐必吃：ほうとう不動 河口湖北本店</h2>
+                        <p class="card-desc">買完吐司後順路開往河口湖北岸。這是一棟超寬敞的傳統日式木屋，有非常多舒服的榻榻米座位。大人們可以脫掉鞋子好好舒展雙腿，快七個月大的小寶貝也能在墊子上安全自在地休息。大家一起享用熱呼呼、充滿蔬菜鮮甜的招牌餺飥麵，暖胃又滿足！</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLzBzuLgWgTe-RLGwflWHdgo-Nn0HK5RSxEw&s" alt="大石公園" class="card-img" width="800" height="600" loading="lazy">
+                    <div class="card-content">
+                        <div class="time-badge">13:45 - 16:30</div>
+                        <h2 class="card-title">音樂盒美術館 ＋ 大石公園</h2>
+                        <p class="card-desc">吃飽喝足後，剛好到這兩個極具歐洲風情與自然花海的景點散散步。大石公園的湖畔步道非常平緩，推著嬰兒車邊走邊賞花，還能拍下許多美麗的家族合照。</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop" alt="和牛燒肉" class="card-img" width="800" height="600" loading="lazy">
+                    <div class="card-content">
+                        <div class="time-badge">17:30 - 19:15</div>
+                        <h2 class="card-title">晚餐必吃：焼肉 ひまわり亭 (向日葵亭)</h2>
+                        <p class="card-desc">晚餐安排在地人超推的和牛燒肉店！肉質極佳且環境舒適，有日式包廂座位可以讓長輩坐得舒服，為這豐富的一天畫下完美的句點。</p>
+                        <div class="note">小提醒：這家很熱門，記得請司機大哥幫忙提早訂位喔！吃飽後約 19:30 回到別墅休息放鬆。上午買的富士山吐司，除了在路上解饞，也剛好可以拿來當作隔天早上的美味早餐！</div>
+                    </div>
+                </div>
+
+                <div class="map-link-container">
+                    <a href="https://www.google.com/maps/dir/Fuji+Gran+Villa+-+TOKI+-/富士山景觀纜車/食パン専門店+FUJISAN+SHOKUPAN/ほうとう不動+河口湖北本店/河口湖音樂盒之森美術館/河口湖大石公園/焼肉+ひまわり亭/" target="_blank" class="map-btn">
+                        <span>📍</span> 開啟 Day 2 行程導航地圖
+                    </a>
+                    <iframe 
+                        class="map-iframe" 
+                        src="https://maps.google.com/maps?saddr=Fuji+Gran+Villa+-+TOKI+-&daddr=富士山景觀纜車+to:食パン専門店+FUJISAN+SHOKUPAN+to:ほうとう不動+河口湖北本店+to:河口湖音樂盒之森美術館+to:河口湖大石公園+to:焼肉+ひまわり亭&output=embed" 
+                        title="Day 2 導航地圖"
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 3 -->
+        <div class="day-section" id="day3">
+            <div class="day-header" onclick="toggleSection('day3-content', this)">
+                Day 3：6/8 (週一) 文化與秘境：神木祈福與極品炸豬排
+                <span class="toggle-icon">▲</span>
+            </div>
+            
+            <div class="day-content" id="day3-content">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP4UNao5e064emTbMj5WnKf12oxjx7RoGHFg&s" alt="北口本宮富士淺間神社" class="card-img" width="800" height="600" loading="lazy">
+                    <div class="card-content">
+                        <div class="time-badge">09:30 - 11:30</div>
+                        <h2 class="card-title">悠閒出發 ＆ 北口本宮富士淺間神社</h2>
+                        <p class="card-desc">從別墅睡飽出發，享受富士山清新空氣。神社擁有壯觀的巨大神木群，步道非常平緩，推著嬰兒車散步也毫無障礙。全家人可以在這裡吸收滿滿的芬多精，祈求旅途平安。</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://www.porta-y.jp/wp-content/uploads/2025/05/local-specialty2025_genroku_2.jpg" alt="とんかつ 元祿 炸豬排" class="card-img" width="800" height="600" loading="lazy">
+                    <div class="card-content">
+                        <div class="time-badge">11:35 - 13:10</div>
+                        <h2 class="card-title">午餐必吃：とんかつ 元祿</h2>
+                        <p class="card-desc">完美動線：逛完神社一上車短短 2 分鐘就到！提早抵達避開正中午人潮。這家老店豬排外酥內嫩，長輩吃也毫不費力。店內空間寬敞設有日式榻榻米，大人舒展雙腿，小寶貝也能安全自在翻滾休息！</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://static.gltjp.com/glt/data/directory/12000/11258/20201026_053312_589e6620_w1920.webp" alt="忍野八海" class="card-img" width="800" height="600" loading="lazy">
+                    <div class="card-content">
+                        <div class="time-badge">13:40 - 15:00</div>
+                        <h2 class="card-title">忍野八海</h2>
+                        <p class="card-desc">搭車約 15 分鐘前往湧泉名勝。富士山雪水經過層層過濾湧出，水池清澈見底如藍寶石！</p>
+                        <div class="note">貼心叮嚀：遊客較多且部分路段人擠人，建議把嬰兒推車留在包車上，用「嬰兒背巾」揹著小寶貝逛，機動性會高很多喔！</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://sliptojapan.com/wp-content/uploads/2025/04/fujisan-kawaguchiko-spot_%E5%B1%B1%E4%B8%AD%E6%B9%96%E5%B9%B3%E9%87%8E%E3%81%AE%E6%B5%9C-AC.jpeg" alt="山中湖 平野之濱 富士山絕景" class="card-img" width="800" height="600" loading="lazy">
+                    <div class="card-content">
+                        <div class="time-badge">15:20 - 16:30</div>
+                        <h2 class="card-title">山中湖 平野之濱</h2>
+                        <p class="card-desc">前往人少好拍照的私房秘境「平野之濱」。讓小寶貝看看湖畔白天鵝，幸運的話還能拍到天鵝與巨大富士山同框的夢幻合照！湖畔風稍大，下車前記得幫大家加件防風外套。</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?q=80&w=800&auto=format&fit=crop" alt="晚餐與採買" class="card-img" width="800" height="600" loading="lazy">
+                    <div class="card-content">
+                        <div class="time-badge">17:00 - 19:15</div>
+                        <h2 class="card-title">晚餐與採買：BELL 購物中心 / Gusto</h2>
+                        <p class="card-desc">一站式滿足：順路回河口湖市區。長輩和家人可直奔 BELL 購物中心地下一樓超市與一樓藥妝店，把伴手禮一次買齊！晚餐直接在美食街或隔壁對推車極度友善的「Gusto」家庭餐廳用平板輕鬆點餐。19:15 帶著戰利品回別墅休息整理行李。</p>
+                    </div>
+                </div>
+
+                <div class="map-link-container">
+                    <a href="https://www.google.com/maps/dir/Fuji+Grand+Villa+-+Toki,+2855-1+Arakura,+Fujiyoshida,+Yamanashi+403-0011%E6%97%A5%E6%9C%AC/%E5%8C%97%E5%8F%A3%E6%9C%AC%E5%AE%AE%E5%AF%8C%E5%A3%AB%E6%B7%BA%E9%96%93%E7%A5%9E%E7%A4%BE+%E6%97%A5%E6%9C%AC%E3%80%92403-0005+Yamanashi,+Fujiyoshida,+Kamiyoshida,+5558/%E5%85%83%E7%A5%BF+%E6%97%A5%E5%BC%8F%E7%82%B8%E8%B1%AC%E6%8E%92%E7%89%9B%E6%8E%92+%E6%97%A5%E6%9C%AC%E3%80%92403-0005+Yamanashi,+Fujiyoshida,+Kamiyoshida,+7+Chome%E2%88%923%E2%88%922/%E5%BF%8D%E9%87%8E%E5%85%AB%E6%B5%B7+%E6%97%A5%E6%9C%AC%E3%80%92401-0511+Yamanashi,+Minamitsuru+District,+Oshino,+Shibokusa/%E5%B9%B3%E9%87%8E%E4%B9%8B%E6%BF%B1+%E6%97%A5%E6%9C%AC%E3%80%92401-0502+Yamanashi,+Minamitsuru+District,+Yamanakako,+Hirano,+13/Kawaguchiko+Shopping+Center+BELL,+2986+Funatsu,+Fujikawaguchiko,+Minamitsuru+District,+Yamanashi+401-0301%E6%97%A5%E6%9C%AC/Fuji+Grand+Villa+-+Toki,+2855-1+Arakura,+Fujiyoshida,+Yamanashi+403-0011%E6%97%A5%E6%9C%AC/@35.4489747,138.7924609,10807m/data=!3m2!1e3!5s0x601960867bfb72e1:0xc23f598143f154a8!4m44!4m43!1m5!1m1!1s0x601961a3f7b29a03:0x12722641fcadcda5!2m2!1d138.7751199!2d35.4895702!1m5!1m1!1s0x60196129b1baaaab:0x351d81311ed09dfe!2m2!1d138.7922637!2d35.470696!1m5!1m1!1s0x601960d58d48743b:0x6d62476c6f4c3d21!2m2!1d138.7959515!2d35.4742438!1m5!1m1!1s0x601966859f99842b:0x163aa46bb0af9f71!2m2!1d138.8324741!2d35.4600675!1m5!1m1!1s0x60196fec8ed01c37:0xaea15f41d50a234a!2m2!1d138.9008237!2d35.4247002!1m5!1m1!1s0x6019608678979297:0x4aa43d805feed8bc!2m2!1d138.7641792!2d35.4899091!1m5!1m1!1s0x601961a3f7b29a03:0x12722641fcadcda5!2m2!1d138.7751199!2d35.4895702!3e0?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="map-btn">
+                        <span>📍</span> 開啟 Day 3 行程導航地圖
+                    </a>
+                    <iframe 
+                        class="map-iframe" 
+                        src="https://maps.google.com/maps?saddr=Fuji+Grand+Villa+-+Toki&daddr=北口本宮富士淺間神社+to:元祿+日式炸豬排牛排+to:忍野八海+to:平野之濱+to:Kawaguchiko+Shopping+Center+BELL+to:Fuji+Grand+Villa+-+Toki&output=embed" 
+                        title="Day 3 導航地圖"
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 4 -->
+        <div class="day-section" id="day4">
+            <div class="day-header" onclick="toggleSection('day4-content', this)">
+                Day 4：6/9 (週二) 購物天堂與登船 
+                <span class="toggle-icon">▲</span>
+            </div>
+            
+            <div class="day-content" id="day4-content">
+                <div class="card">
+                    <img src="https://www.jrtimes.tw/upload/list/2bbeb9cc-38b1-4c9f-a4cc-ca00dfd880b3.jpg" alt="有明 Garden" class="card-img" width="800" height="600" loading="lazy">
+                    <div class="card-content">
+                        <div class="time-badge">10:30 - 14:30</div>
+                        <h2 class="card-title">有明 Garden (血拼與午餐)</h2>
+                        <p class="card-desc">早上 08:30 退房出發。抵達商場後可逛超市與各類生活精品店，一站買齊伴手禮。午餐推薦在商場美食街享用。</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1599640842225-85d111c60e6b?q=80&w=800&auto=format&fit=crop" alt="東京國際郵輪碼頭" class="card-img" width="800" height="600" loading="lazy">
+                    <div class="card-content">
+                        <div class="time-badge">15:00</div>
+                        <h2 class="card-title">抵達東京國際郵輪碼頭</h2>
+                        <p class="card-desc">14:45 從商場集合出發，10 分鐘車程即可抵達碼頭，帶著滿滿戰利品優雅登上 MSC 郵輪！</p>
+                    </div>
+                </div>
+
+                <div class="map-link-container">
+                    <a href="https://www.google.com/maps/dir/Fuji+Gran+Villa+-+TOKI+-/有明+Garden/東京國際郵輪碼頭/" target="_blank" class="map-btn">
+                        <span>📍</span> 開啟 Day 4 行程導航地圖
+                    </a>
+                    <iframe 
+                        class="map-iframe" 
+                        src="https://maps.google.com/maps?saddr=Fuji+Gran+Villa+-+TOKI+-&daddr=有明+Garden+to:東京國際郵輪碼頭&output=embed" 
+                        title="Day 4 導航地圖"
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>✨ 專屬導遊小嵐 用心為您與家人規劃 ✨</p>
+    </footer>
+
+    <!-- 回到頂部按鈕 -->
+    <button id="backToTop" onclick="scrollToTop()">↑</button>
+
+    <!-- 互動功能腳本 -->
+    <script>
+        // 回到頂部按鈕顯示邏輯
+        window.onscroll = function() {
+            var btn = document.getElementById("backToTop");
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+
+        // 平滑滾動至頂部
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // 行程區塊收合/展開邏輯 (Accordion)
+        function toggleSection(contentId, headerElement) {
+            var content = document.getElementById(contentId);
+            var icon = headerElement.querySelector('.toggle-icon');
+            
+            if (content.classList.contains('collapsed')) {
+                content.classList.remove('collapsed');
+                icon.textContent = '▲';
+            } else {
+                content.classList.add('collapsed');
+                icon.textContent = '▼';
+            }
+        }
+    </script>
+</body>
+</html>
