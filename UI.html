@@ -358,11 +358,6 @@
              width: 100%;
         }
 
-        .note-header-wrap::before {
-             content: '💡';
-             font-size: 18px;
-        }
-
         .note.calm {
              background-color: #F0F9FF;
              border-left-color: var(--map-color);
@@ -373,7 +368,33 @@
              border-bottom-color: rgba(14, 165, 233, 0.3);
         }
 
-        .note.calm .note-header-wrap::before { content: '❄️'; }
+        @media (min-width: 768px) {
+            .card {
+                flex-direction: row;
+                align-items: stretch;
+            }
+            .card-img-wrapper {
+                width: 35%;
+                height: auto;
+                min-height: 240px;
+                flex-shrink: 0;
+            }
+            .card-img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 16px 0 0 16px;
+            }
+            .card-content {
+                width: 65%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .card-content.full-width {
+                width: 100%;
+            }
+        }
 
         /* 地圖區域 */
         .map-link-container {
@@ -915,11 +936,11 @@
                 <div class="card cruise-theme">
                     <div class="card-img-wrapper">
                         <!-- 替換為郵輪登船照/外觀大氣照 -->
-                        <img src="https://images.unsplash.com/photo-1548574505-12caf0050b5b?q=80&w=800&auto=format&fit=crop" alt="東京國際郵輪碼頭登船" class="card-img" loading="lazy">
+                        <img src="https://i0.wp.com/senworldtravel.blog/wp-content/uploads/2025/05/msc-cruises-msc-bellissima-exterior-copyrights-msc-rights.jpg?fit=1200%2C799&ssl=1" alt="東京國際郵輪碼頭登船" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">13:00 - 15:00</div>
-                        <h2 class="card-title">【關鍵時間】抵達大黑埠頭與登船</h2>
+                        <h2 class="card-title">【關鍵時間】抵達東京國際郵輪碼頭登船</h2>
                         <p class="card-desc">14:30 將豐碩的戰利品放上車，輕鬆前往碼頭。結束日本採買後，今天我們將以最優雅的姿態登上這座海上移動城堡。</p>
                         <div class="note calm">
                             <div class="note-header-wrap"><strong>達人帶路：</strong></div>
@@ -934,7 +955,7 @@
 
                 <div class="card cruise-theme">
                     <div class="card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?q=80&w=800&auto=format&fit=crop" alt="榮耀大道" class="card-img" loading="lazy">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKLvvDZG7HV4dyDxQ-uRPdgPU0rHDwLOgRKw&s" alt="榮耀大道" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">16:00</div>
@@ -945,7 +966,7 @@
                 
                 <div class="card cruise-theme">
                     <div class="card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=800&auto=format&fit=crop" alt="迎賓晚餐" class="card-img" loading="lazy">
+                        <img src="https://s.yimg.com/ny/api/res/1.2/h7gN_JPVq4jJCpdTT7htFA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQ4MA--/https://s.yimg.com/os/creatr-uploaded-images/2025-12/a7bc9c90-d0fb-11f0-bbdb-8d3b7f620b75" alt="迎賓晚餐" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">18:00</div>
@@ -971,7 +992,7 @@
                 </div>
                 <div class="card cruise-theme">
                     <div class="card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1533280184422-90ab0507a21f?q=80&w=800&auto=format&fit=crop" alt="悠閒晨光" class="card-img" loading="lazy">
+                        <img src="https://today-obs.line-scdn.net/0hJl7rR6OzFUMKCwTjvY9qFDJdGTI5bQ9KKGtSLCsISiMiJ1tBMjhGICwMTW8vbwITKm1bJHwKHyclPFBCMg/w580" alt="悠閒晨光" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">10:00</div>
@@ -994,7 +1015,7 @@
                 </div>
                 <div class="card cruise-theme">
                     <div class="card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1572914857640-f1db47d3454b?q=80&w=800&auto=format&fit=crop" alt="遊樂設施" class="card-img" loading="lazy">
+                        <img src="https://winnieexplorer.com/wp-content/uploads/2025/05/msc-bellissima%E4%BB%98%E8%B2%BB%E8%A8%AD%E6%96%BD-F1-%E6%A8%A1%E6%93%AC%E8%B3%BD%E8%BB%8A-e1746068578385-1024x495.jpg" alt="遊樂設施" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">午後彈性時光</div>
@@ -1020,7 +1041,7 @@
                 </div>
                 <div class="card cruise-theme">
                     <div class="card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?q=80&w=800&auto=format&fit=crop" alt="免稅血拼" class="card-img" loading="lazy">
+                        <img src="https://lh5.googleusercontent.com/proxy/kkiaM5Rt44M7D7YEJIWaaS6aUyQrhpva8YMayE8VaKI0tmo5zrve7mYUJaa225fzUaP5nZpHrW08MeD2wRebwdKyQbHVTicAHnJE5ks9uS7r7ULNrEa5ChyY" alt="免稅血拼" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">全日自由探索</div>
@@ -1046,7 +1067,7 @@
                 
                 <div class="card cruise-theme">
                     <div class="card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1507676184212-d0330a156f97?q=80&w=800&auto=format&fit=crop" alt="倫敦大劇院" class="card-img" loading="lazy">
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/%E5%80%AB%E6%95%A6%E5%A4%A7%E5%8A%87%E9%99%A2-%E5%9C%96-msc%E5%9C%B0%E4%B8%AD%E6%B5%B7%E9%83%B5%E8%BC%AA-645499fd4647d.jpg" alt="倫敦大劇院" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">21:00</div>
@@ -1072,7 +1093,7 @@
                 </div>
                 <div class="card cruise-theme">
                     <div class="card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1583508493010-38449c4af422?q=80&w=800&auto=format&fit=crop" alt="陽台早餐" class="card-img" loading="lazy">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMyM0wayDR4kcMO-RLTY1s7psD57N3AIIwcw&s" alt="陽台早餐" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">日間自由活動</div>
@@ -1084,7 +1105,7 @@
                 <div class="card cruise-theme">
                     <div class="card-img-wrapper">
                         <!-- 替換為施華洛世奇水晶群星閃耀風格 -->
-                        <img src="https://images.unsplash.com/photo-1528695027581-22485547a468?q=80&w=800&auto=format&fit=crop" alt="水晶階梯" class="card-img" loading="lazy">
+                        <img src="https://lh3.googleusercontent.com/proxy/fDQ-pYjinaNiLPjVNTyF18hJYzjhCILEKSL4CeoT2wTEP4fSxf9icEuFl7Y79wtpvD0akYCQ-iftkMSYzR48YNRl6zM2f3GQDaLcdVmS-d4HJZpFW2CW0Q8" alt="水晶階梯" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">20:00</div>
@@ -1095,7 +1116,7 @@
                 
                 <div class="card cruise-theme">
                     <div class="card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1551522435-a11afaeb7170?q=80&w=800&auto=format&fit=crop" alt="行李打包" class="card-img" loading="lazy">
+                        <img src="https://cdn2.ettoday.net/images/821/d821409.jpg" alt="行李打包" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">22:00</div>
@@ -1110,7 +1131,7 @@
         </div>
 
         <!-- Day 8 -->
-        <div class="day-section cruise-theme" id="day9">
+        <div class="day-section cruise-theme" id="day9">+
             <div class="day-header cruise-theme" onclick="toggleSection('day9-content', this)">
                 Day 8：6/13 (週六) 🚗 抵達基隆港：滿載美好回憶
                 <span class="toggle-icon">▲</span>
@@ -1119,11 +1140,11 @@
             <div class="day-content" id="day9-content">
                 <div class="card cruise-theme">
                     <div class="card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1437846972679-9e6e537be46e?q=80&w=800&auto=format&fit=crop" alt="機場回程" class="card-img" loading="lazy">
+                        <img src="https://img.ltn.com.tw/Upload/news/600/2024/12/11/4890784_1_1.jpg" alt="機場回程" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">06:00</div>
-                        <h2 class="card-title">【關鍵時間】抵達基隆港</h2>
+                        <h2 class="card-title">抵達基隆港</h2>
                         <p class="card-desc">清晨，榮耀號將緩緩駛入基隆港。享用完最後一頓豐盛的自助早餐後，我們將利用鑽石會員的<strong>「優先下船」</strong>特權，從容不迫地通關，帶著滿滿的回憶與戰利品回到溫暖的家。</p>
                         <div class="note calm">
                             <div class="note-header-wrap"><strong>陸地巡航視聽指南：</strong></div>
