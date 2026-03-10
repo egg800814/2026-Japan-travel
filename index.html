@@ -368,34 +368,6 @@
              border-bottom-color: rgba(14, 165, 233, 0.3);
         }
 
-        @media (min-width: 768px) {
-            .card {
-                flex-direction: row;
-                align-items: stretch;
-            }
-            .card-img-wrapper {
-                width: 35%;
-                height: auto;
-                min-height: 240px;
-                flex-shrink: 0;
-            }
-            .card-img {
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-                border-radius: 16px 0 0 16px;
-            }
-            .card-content {
-                width: 65%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
-            .card-content.full-width {
-                width: 100%;
-            }
-        }
-
         /* 地圖區域 */
         .map-link-container {
             text-align: center;
@@ -481,12 +453,13 @@
         @media (min-width: 768px) {
             .card {
                 flex-direction: row;
+                align-items: stretch;
                 height: auto;
                 min-height: 280px;
             }
-            .card.info-card {
+            .card.info-card, .card.text-card {
                 flex-direction: column;
-                height: auto;
+                min-height: auto;
             }
             .card-img-wrapper {
                 width: 40%;
@@ -499,6 +472,10 @@
                 flex-direction: column;
                 justify-content: center;
                 padding: 30px;
+            }
+            .card-content.full-width {
+                width: 100%;
+                padding: 20px 30px;
             }
             header h1 { font-size: 52px; }
             header p { font-size: 22px; }
@@ -669,8 +646,8 @@
             </div>
             
             <div class="day-content" id="day2-content">
-                <div class="card">
-                    <div class="card-content full-width" style="padding-bottom: 0;">
+                <div class="card text-card">
+                    <div class="card-content full-width" style="padding: 16px 24px;">
                          <p class="card-desc"><strong>09:30 ｜ 悠閒出發</strong><br>從別墅充飽電出發，開啟富士山經典的一天！</p>
                     </div>
                 </div>
@@ -768,8 +745,8 @@
             </div>
             
             <div class="day-content" id="day3-content">
-                <div class="card">
-                    <div class="card-content full-width" style="padding-bottom: 0;">
+                <div class="card text-card">
+                    <div class="card-content full-width" style="padding: 16px 24px;">
                          <p class="card-desc"><strong>09:30 ｜ 悠閒出發</strong><br>從別墅睡飽出發，享受富士山早晨的清新空氣，完全不用趕時間！</p>
                     </div>
                 </div>
@@ -879,8 +856,8 @@
             </div>
             
             <div class="day-content" id="day4-content">
-                <div class="card">
-                    <div class="card-content full-width" style="padding-bottom: 0;">
+                <div class="card text-card">
+                    <div class="card-content full-width" style="padding: 16px 24px;">
                          <p class="card-desc"><strong>08:30 ｜ 退房出發</strong><br>告別富士山，帶著滿滿的回憶驅車前往東京灣區。</p>
                     </div>
                 </div>
@@ -985,8 +962,8 @@
             </div>
             
             <div class="day-content" id="day6-content">
-                <div class="card cruise-theme">
-                     <div class="card-content full-width" style="padding-bottom: 0;">
+                <div class="card text-card cruise-theme">
+                     <div class="card-content full-width" style="padding: 16px 24px;">
                          <p class="card-desc">第一天完整的海上航行，主軸是「徹底放鬆」。這正是移航行程最迷人的地方——沒有靠港時間的催促。</p>
                      </div>
                 </div>
@@ -1034,8 +1011,8 @@
             </div>
             
             <div class="day-content" id="day7-content">
-                <div class="card cruise-theme">
-                     <div class="card-content full-width" style="padding-bottom: 0;">
+                <div class="card text-card cruise-theme">
+                     <div class="card-content full-width" style="padding: 16px 24px;">
                          <p class="card-desc">習慣了船上的節奏後，今天是盡情享受設施與美食的最佳時機。</p>
                      </div>
                 </div>
@@ -1086,8 +1063,8 @@
             </div>
             
             <div class="day-content" id="day8-content">
-                <div class="card cruise-theme">
-                     <div class="card-content full-width" style="padding-bottom: 0;">
+                <div class="card text-card cruise-theme">
+                     <div class="card-content full-width" style="padding: 16px 24px;">
                          <p class="card-desc">最後一個全天航海日，把握時間把還沒體驗到的設施玩過一遍！</p>
                      </div>
                 </div>
