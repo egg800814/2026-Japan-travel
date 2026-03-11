@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>富士山與地中海郵輪 8天7夜 私享家族假期</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* 富士晨曦 Palette */
+            --pearl-white: #F5F5F3;
+            --obsidian-navy: #2C363F;
+            --champagne-sand: #C9B396;
+            --mist-gray: #8A9298;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: var(--pearl-white);
+            color: var(--obsidian-navy);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, .serif {
+            font-family: 'Noto Serif TC', serif;
+        }
+
+        /* 首圖區域：拍立得與留白美學 */
+        .hero {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5vh 5vw;
+        }
+
+        .hero-image-wrapper {
+            position: relative;
+            width: 65vw;
+            height: 70vh;
+            max-width: 1200px;
+            background-color: #fff;
+            box-shadow: 0 20px 50px rgba(44, 54, 63, 0.08);
+            z-index: 1;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background: url('https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat;
+        }
+
+        /* 打破網格 (Break the Grid) 的文字排版 */
+        .hero-text-box {
+            position: absolute;
+            bottom: -8vh; 
+            left: -8vw;
+            background-color: var(--pearl-white);
+            padding: 4rem 4rem 2rem 0;
+            max-width: 650px;
+            text-align: left;
+            z-index: 2;
+        }
+
+        .hero-title {
+            font-size: clamp(2rem, 3.5vw, 3.5rem);
+            font-weight: 400;
+            color: var(--obsidian-navy);
+            line-height: 1.3;
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.05em;
+        }
+
+        .hero-subtitle {
+            font-weight: 300;
+            font-size: clamp(1rem, 1.2vw, 1.2rem);
+            color: var(--mist-gray);
+            margin-bottom: 2rem;
+            letter-spacing: 0.1em;
+        }
+
+        .scroll-down {
+            display: inline-block;
+            margin-top: 1rem;
+            font-size: 1.5rem;
+            color: var(--champagne-sand);
+            text-decoration: none;
+            animation: float 2s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(8px); }
+        }
+
+        /* 內容區塊 */
+        .content-section {
+            padding: 20vh 10vw 10vh;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 10vh;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: var(--obsidian-navy);
+            margin-bottom: 1.5rem;
+        }
+
+        .divider {
+            width: 1px;
+            height: 60px;
+            background-color: var(--champagne-sand);
+            margin: 0 auto;
+        }
+
+        .grid-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6vw;
+            align-items: center;
+            margin-bottom: 15vh;
+        }
+
+        .grid-reverse {
+            direction: rtl;
+        }
+        
+        .grid-reverse > * {
+            direction: ltr;
+        }
+
+        .text-content p {
+            color: var(--mist-gray);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+
+        .text-content h3 {
+            font-size: 2rem;
+            font-weight: 400;
+            color: var(--obsidian-navy);
+            margin-bottom: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 0;
+            }
+            .hero-image-wrapper {
+                width: 100vw;
+                height: 60vh;
+                box-shadow: none;
+            }
+            .hero-text-box {
+                position: relative;
+                bottom: 0;
+                left: 0;
+                padding: 3rem 8vw;
+                transform: translateY(-5vh);
+                width: 90vw;
+                margin: 0 auto;
+            }
+            .grid-layout {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            .grid-reverse {
+                direction: ltr;
+            }
+            .text-content h3 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="hero-image-wrapper">
+            <div class="hero-image"></div>
+            <div class="hero-text-box">
+                <h1 class="hero-title serif">富士山與地中海郵輪<br>8天7夜 私享家族假期</h1>
+                <p class="hero-subtitle serif">真正的奢華，是與摯愛共度的無憂時光。</p>
+                <a href="#details" class="scroll-down">↓</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="details" class="content-section">
+        <div class="section-header">
+            <h2 class="serif">The Pinnacle Journey</h2>
+            <p style="text-align: center; color: var(--mist-gray); max-width: 700px; margin: 0 auto 2rem; line-height: 1.8; letter-spacing: 0.05em; font-weight: 300;">
+                「從專屬座駕的平穩，到海上移動城堡的湛藍。<br>
+                我們將三代同堂的繁瑣，化為毫不費力的優雅。<br>
+                為您與家人量身訂製，一年一會的頂規舒壓提案。」
+            </p>
+            <div class="divider"></div>
+        </div>
+
+        <div class="grid-layout">
+            <div class="text-content">
+                <h3 class="serif">Chapter 0-1<br>尊榮啟航與初見</h3>
+                <p>不再為了趕飛機而妥協睡眠。專屬 9 人座商務旗艦與高安規嬰兒座椅，完美避開車潮，從容抵達機場。透過星宇航空 A321neo 的質感座艙與 Priority Pass 優先通道，將三代同堂的繁瑣化為優雅。</p>
+                <p>抵達東京後，私人座駕直驅河口湖 Fuji Gran Villa。換上輕便衣物，在靜謐的客廳中，享用已為您備妥的正統熱呼呼壽喜燒，為這場私密且具儀式感的完美接風宴拉開序幕。</p>
+            </div>
+            <div class="image-box" style="height: 550px; background: url('https://images.unsplash.com/photo-1542051812871-702509b330e7?q=80&w=1974&auto=format&fit=crop') center/cover; box-shadow: 0 20px 40px rgba(0,0,0,0.06);"></div>
+        </div>
+
+        <div class="grid-layout grid-reverse">
+            <div class="text-content">
+                <h3 class="serif">Chapter 2-3<br>富士絕景與百年文化</h3>
+                <p>搭乘絕景纜車升空，讓巨大富士山與湖面倒影瞬間佔滿視野。漫步於歐洲風情的音樂盒之森與大石公園的花毯中，品嚐職人手作的富士山吐司與傳統餺飥麵，享受無需趕路的寬心時刻。</p>
+                <p>深入神木環繞的百年淺間神社沐浴芬多精，並探訪如藍寶石般的忍野八海湧泉。晚餐為您預留日式隱密包廂，頂級和牛油花在烤盤滋滋作響，將一日的美好收攏於最佳的節奏內。</p>
+            </div>
+            <div class="image-box" style="height: 550px; background: url('https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?q=80&w=2070&auto=format&fit=crop') center/cover; box-shadow: 0 20px 40px rgba(0,0,0,0.06);"></div>
+        </div>
+
+        <div class="grid-layout">
+            <div class="text-content">
+                <h3 class="serif">Chapter 4-5<br>盛世啟航與湛藍航遊</h3>
+                <p>告別山林，抵達東京國際郵輪碼頭。啟動鑽石會籍專屬通道，避開擁擠人潮，以最優雅的姿態登上 17 萬噸的 MSC 地中海榮耀號。從此無需再每日打包行李，只需盡情享受。</p>
+                <p>體驗 Aurea Spa 熱能水療、於 Butcher's Cut 美式牛排館切開汁水飽滿的熟成牛排，並欣賞世界級的百老匯歌舞秀。早晨由客房服務送抵陽台的熱咖啡喚醒，讓海洋成為窗外流動的風景。</p>
+            </div>
+            <div class="image-box" style="height: 550px; background: url('https://images.unsplash.com/photo-1599839619722-39751411ea63?q=80&w=1974&auto=format&fit=crop') center/cover; box-shadow: 0 20px 40px rgba(0,0,0,0.06);"></div>
+        </div>
+
+        <div class="grid-layout grid-reverse">
+            <div class="text-content">
+                <h3 class="serif">Chapter 6<br>從容賦歸，延續美好</h3>
+                <p>晨曦中抵達基隆港，享用完豐盛早餐，再次運用鑽石會籍的優先下船特權，當他人還在等待，我們已帶著滿滿回憶輕鬆踏上台灣土地。</p>
+                <p>頂級 9 人座商務旗艦早已在港口待命，司機精準避開壅塞車潮，平穩地將家人送達溫暖的家。為這趟絕美、毫不費力的三代同堂私享家族旅行，畫下完美無瑕的句點。</p>
+            </div>
+            <div class="image-box" style="height: 550px; background: url('https://images.unsplash.com/photo-1543329068-07b9415ac88a?q=80&w=2072&auto=format&fit=crop') center/cover; box-shadow: 0 20px 40px rgba(0,0,0,0.06);"></div>
+        </div>
+    </section>
+
+</body>
+</html>
