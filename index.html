@@ -1,36 +1,47 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- SEO 與社群分享標籤 (Open Graph) -->
     <meta name="description" content="為同行家人與小寶貝量身打造的超舒適日本富士山與郵輪之旅，包含輕鬆不趕路的專車接送、私房美景與在地美食！">
     <meta property="og:title" content="富士山・地中海郵輪 家族美好時光 | 8天7夜專屬行程表">
-    <meta property="og:description" content="這不是一趟旅行，而是你今年最不想錯過的人生切片。">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1512413919833-2eb13e0e02fd?q=80&w=1600&auto=format&fit=crop">
+    <meta property="og:description" content="錯過這次，下個花季要等 365 天。這不只是一份行程，這是為您與家人量身締造的無價記憶。">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1512413919833-2eb13e0e02fd?q=80&w=1600&auto=format&fit=crop">
     <meta property="og:type" content="website">
-    
+
     <!-- 網頁圖示 (Favicon) - 使用富士山 Emoji -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗻</text></svg>">
-    
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗻</text></svg>">
+
     <!-- Google Fonts: Noto Serif TC (明體) & Noto Sans TC (黑體) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&family=Noto+Serif+TC:wght@500;700;900&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&family=Noto+Serif+TC:wght@500;700;900&display=swap"
+        rel="stylesheet">
+
     <title>富士山・郵輪 家族美好時光 | 專屬行程表</title>
     <style>
         /* 基礎設定與 Editorial Design 高質感色彩配置 */
         :root {
-            --primary-color: #0F172A; /* 深海軍藍 */
-            --accent-color: #C5A059; /* 香檳金 */
-            --secondary-color: #F8FAFC; /* 冷霜白背景 */
-            --text-main: #2D3748; /* 石墨灰 */
+            --primary-color: #0F172A;
+            /* 深海軍藍 */
+            --accent-color: #C5A059;
+            /* 香檳金 */
+            --secondary-color: #F8FAFC;
+            /* 冷霜白背景 */
+            --text-main: #2D3748;
+            /* 石墨灰 */
             --text-muted: #718096;
             --card-bg: #FFFFFF;
-            --map-color: #3182CE; /* 寧靜海藍 */
-            --cruise-color: #1A202C; /* 尊榮曜石黑 */
+            --map-color: #3182CE;
+            /* 寧靜海藍 */
+            --cruise-color: #1A202C;
+            /* 尊榮曜石黑 */
         }
 
         html {
@@ -48,13 +59,19 @@
             overflow-x: hidden;
             box-sizing: border-box;
         }
-        
-        *, *:before, *:after {
+
+        *,
+        *:before,
+        *:after {
             box-sizing: inherit;
         }
 
         /* 標題字體 (明體) */
-        h1, h2, h3, .day-header, .card-title {
+        h1,
+        h2,
+        h3,
+        .day-header,
+        .card-title {
             font-family: 'Noto Serif TC', serif;
             letter-spacing: 0.5px;
         }
@@ -65,13 +82,14 @@
             background-color: #000;
             color: #F7FAFC;
             text-align: center;
-            height: 100vh; /* 滿版帶沉浸感 */
+            height: 100vh;
+            /* 滿版帶沉浸感 */
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
         }
 
         .hero-bg {
@@ -79,10 +97,13 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 120%; /* 留空間給視差位移 */
+            height: 120%;
+            /* 留空間給視差位移 */
             background: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.7)), url('https://images.unsplash.com/photo-1512413919833-2eb13e0e02fd?q=80&w=2000&auto=format&fit=crop') center/cover;
-            background-attachment: fixed; /* 視差核心 */
-            filter: contrast(105%) saturate(85%) sepia(10%); /* 膠卷感濾鏡 */
+            background-attachment: fixed;
+            /* 視差核心 */
+            filter: contrast(105%) saturate(85%) sepia(10%);
+            /* 膠卷感濾鏡 */
             z-index: 1;
         }
 
@@ -95,15 +116,24 @@
         }
 
         @keyframes cinematicFadeIn {
-            0% { opacity: 0; transform: translateY(40px) scale(0.98); filter: blur(4px); }
-            100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+            0% {
+                opacity: 0;
+                transform: translateY(40px) scale(0.98);
+                filter: blur(4px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+                filter: blur(0);
+            }
         }
 
         header h1 {
             margin: 0;
             font-size: 42px;
             letter-spacing: 6px;
-            text-shadow: 2px 4px 12px rgba(0,0,0,0.8);
+            text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.8);
             line-height: 1.35;
             font-weight: 900;
         }
@@ -112,7 +142,7 @@
             margin-top: 18px;
             font-size: 18px;
             opacity: 0.9;
-            text-shadow: 1px 2px 8px rgba(0,0,0,0.8);
+            text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.8);
             max-width: 650px;
             letter-spacing: 1px;
             font-weight: 400;
@@ -150,9 +180,10 @@
             display: flex;
             gap: 12px;
             padding: 12px 20px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
             border-bottom: 1px solid #E2E8F0;
-            overflow-x: auto; /* 手機版橫向滑動 */
+            overflow-x: auto;
+            /* 手機版橫向滑動 */
             white-space: nowrap;
             -webkit-overflow-scrolling: touch;
         }
@@ -174,19 +205,28 @@
             flex-shrink: 0;
         }
 
-        .sticky-nav a:hover, .sticky-nav a.active {
+        .sticky-nav a:hover,
+        .sticky-nav a.active {
             background-color: var(--primary-color);
             color: white;
         }
 
-        .sticky-nav a[href*="5"], .sticky-nav a[href*="6"], .sticky-nav a[href*="7"], .sticky-nav a[href*="8"], .sticky-nav a[href*="9"] {
+        .sticky-nav a[href*="5"],
+        .sticky-nav a[href*="6"],
+        .sticky-nav a[href*="7"],
+        .sticky-nav a[href*="8"],
+        .sticky-nav a[href*="9"] {
             border: 1px solid var(--cruise-color);
         }
-        
-        .sticky-nav a[href*="5"]:hover, .sticky-nav a[href*="6"]:hover, .sticky-nav a[href*="7"]:hover, .sticky-nav a[href*="8"]:hover, .sticky-nav a[href*="9"]:hover,
+
+        .sticky-nav a[href*="5"]:hover,
+        .sticky-nav a[href*="6"]:hover,
+        .sticky-nav a[href*="7"]:hover,
+        .sticky-nav a[href*="8"]:hover,
+        .sticky-nav a[href*="9"]:hover,
         .sticky-nav a.active-cruise {
-             background-color: var(--cruise-color);
-             color: #E2E8F0;
+            background-color: var(--cruise-color);
+            color: #E2E8F0;
         }
 
         /* 內容容器 */
@@ -222,9 +262,10 @@
         .day-header.cruise-theme {
             background-color: var(--cruise-color);
             background-image: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
-            border-left: 4px solid #D4AF37; /* 香檳金點綴 */
+            border-left: 4px solid #D4AF37;
+            /* 香檳金點綴 */
         }
-        
+
         .day-header.info-theme {
             background-color: #0369A1;
             background-image: none;
@@ -240,10 +281,10 @@
             transition: transform 0.3s;
         }
 
-        .day-content.collapsed + .toggle-icon {
+        .day-content.collapsed+.toggle-icon {
             transform: rotate(180deg);
         }
-        
+
         .day-content {
             display: block;
             animation: slideDown 0.4s ease-out;
@@ -254,8 +295,15 @@
         }
 
         @keyframes slideDown {
-            from { opacity: 0; transform: translateY(-10px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         /* 卡片設計 - FOMO & 高質感 */
@@ -263,7 +311,7 @@
             background-color: var(--card-bg);
             border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
             margin-bottom: 24px;
             display: flex;
             flex-direction: column;
@@ -273,7 +321,7 @@
 
         .card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
         }
 
         .card-img-wrapper {
@@ -288,20 +336,22 @@
             height: 100%;
             object-fit: cover;
             transition: transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
-            filter: sepia(12%) contrast(92%) saturate(85%) brightness(96%); /* 質感膠卷濾鏡統一色調 */
+            filter: sepia(12%) contrast(92%) saturate(85%) brightness(96%);
+            /* 質感膠卷濾鏡統一色調 */
         }
 
         .card:hover .card-img {
-            transform: scale(1.03); /* 高雅緩慢縮放 */
+            transform: scale(1.03);
+            /* 高雅緩慢縮放 */
         }
 
         .card-content {
             padding: 24px;
             position: relative;
         }
-        
+
         .card-content.full-width {
-             width: 100% !important;
+            width: 100% !important;
         }
 
         .time-badge {
@@ -315,10 +365,11 @@
             display: inline-block;
             margin-bottom: 12px;
         }
-        
+
         .cruise-theme .time-badge {
-             background-color: #D4AF37; /* 香檳金 */
-             color: #0F172A;
+            background-color: #D4AF37;
+            /* 香檳金 */
+            color: #0F172A;
         }
 
         .card-title {
@@ -340,41 +391,43 @@
         .note {
             margin-top: 16px;
             padding: 16px 20px;
-            background-color: #F8F9FA; /* 極淺灰底 */
+            background-color: #F8F9FA;
+            /* 極淺灰底 */
             border-left: 3px solid var(--accent-color);
             font-size: 15px;
             color: var(--text-main);
             display: flex;
-            flex-direction: column; 
+            flex-direction: column;
             align-items: flex-start;
             gap: 6px;
             letter-spacing: 0.5px;
         }
 
         .note strong {
-             display: block; 
-             font-size: 16px;
-             margin-bottom: 4px;
-             border-bottom: 1px solid rgba(197, 160, 89, 0.3);
-             padding-bottom: 6px;
-             width: 100%;
-             color: var(--primary-color);
+            display: block;
+            font-size: 16px;
+            margin-bottom: 4px;
+            border-bottom: 1px solid rgba(197, 160, 89, 0.3);
+            padding-bottom: 6px;
+            width: 100%;
+            color: var(--primary-color);
         }
 
         .note-header-wrap {
-             display: flex;
-             align-items: center;
-             gap: 8px;
-             width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
         }
 
         .note.calm {
-             background-color: #F1F5F9; /* 淡藍灰 */
-             border-left-color: var(--primary-color);
+            background-color: #F1F5F9;
+            /* 淡藍灰 */
+            border-left-color: var(--primary-color);
         }
-        
+
         .note.calm strong {
-             border-bottom-color: rgba(15, 23, 42, 0.2);
+            border-bottom-color: rgba(15, 23, 42, 0.2);
         }
 
         /* 地圖區域 */
@@ -384,7 +437,7 @@
             background-color: var(--card-bg);
             padding: 24px;
             border-radius: 16px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
             border: 1px solid #E2E8F0;
         }
 
@@ -432,7 +485,7 @@
             height: 52px;
             font-size: 24px;
             cursor: pointer;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
             z-index: 999;
             transition: transform 0.2s, background-color 0.2s;
         }
@@ -452,10 +505,10 @@
         }
 
         footer h4 {
-             color: #E2E8F0;
-             margin-bottom: 10px;
-             font-family: 'Noto Serif TC', serif;
-             font-size: 20px;
+            color: #E2E8F0;
+            margin-bottom: 10px;
+            font-family: 'Noto Serif TC', serif;
+            font-size: 20px;
         }
 
         /* RWD: Tablet & Desktop */
@@ -466,15 +519,19 @@
                 height: auto;
                 min-height: 280px;
             }
-            .card.info-card, .card.text-card {
+
+            .card.info-card,
+            .card.text-card {
                 flex-direction: column;
                 min-height: auto;
             }
+
             .card-img-wrapper {
                 width: 40%;
                 height: auto;
                 min-height: 280px;
             }
+
             .card-content {
                 width: 60%;
                 display: flex;
@@ -482,39 +539,51 @@
                 justify-content: center;
                 padding: 30px;
             }
+
             .card-content.full-width {
                 width: 100%;
                 padding: 20px 30px;
             }
-            header h1 { font-size: 52px; }
-            header p { font-size: 22px; }
-            .sticky-nav { justify-content: center; }
+
+            header h1 {
+                font-size: 52px;
+            }
+
+            header p {
+                font-size: 22px;
+            }
+
+            .sticky-nav {
+                justify-content: center;
+            }
         }
-        
+
         ul {
-             padding-left: 20px;
-             color: var(--text-muted);
-             word-break: break-all;
-             word-wrap: break-word; /* 避免 url 或長文字破版 */
-             max-width: 100%;
-             box-sizing: border-box;
+            padding-left: 20px;
+            color: var(--text-muted);
+            word-break: break-all;
+            word-wrap: break-word;
+            /* 避免 url 或長文字破版 */
+            max-width: 100%;
+            box-sizing: border-box;
         }
+
         ul li {
-             margin-bottom: 8px;
-             max-width: 100%;
-             box-sizing: border-box;
+            margin-bottom: 8px;
+            max-width: 100%;
+            box-sizing: border-box;
         }
     </style>
 </head>
+
 <body>
 
     <header id="top">
         <div class="hero-bg"></div>
         <div class="hero-content">
-            <h1>御用私房・尊爵啟航<br>富士山絕景與 MSC 榮耀號 <br> 8 日高訂私旅</h1>
-            <p>真正的奢華，是讓每一位家人都擁有從容的微笑。<br>
-                為六個月大的寶貝預留安睡的空間，為長輩打點無需排隊的極上盛宴。<br>
-                這不只是一份行程，這是為您量身締造的家族無價記憶。</p>
+            <h1>🌟 御用私房・尊爵啟航<br>富士山絕景與 MSC 榮耀號<br> 高訂私旅</h1>
+            <p>「真正的奢華，是讓每一位家人都擁有從容的微笑。<br>我們為六個月大的寶貝預留了安睡的空間，為長輩打點了無需排隊的極上盛宴。<br>錯過這次，下個花季要等 365
+                天。這不只是一份行程，這是為您與家人量身締造的無價記憶。」</p>
             <a href="#day0" class="cta-btn-hero">即刻瀏覽專屬行程</a>
         </div>
     </header>
@@ -534,114 +603,152 @@
     </nav>
 
     <div class="container">
-         <!-- =============== 啟程準備 =============== -->
-         <div class="day-section" id="day0">
+        <!-- =============== 啟程準備 =============== -->
+        <div class="day-section" id="day0">
             <div class="day-header info-theme" onclick="toggleSection('day0-content', this)">
                 ✈️ 啟程準備：航班與接駁車資訊 (6/6)
                 <span class="toggle-icon">▲</span>
             </div>
             <div class="day-content" id="day0-content">
-                 <div class="card info-card">
-                     <div class="card-content full-width">
-                         <h2 class="card-title">【座艙級禮遇】頂規商務旗艦接駕</h2>
-                         <ul>
-                             <li><strong>從容啟程：</strong>清晨 06:10，專屬旗艦座駕將於豐原溫暖的家準時候駕，06:30 於潭子接駁後，平穩駛向清泉崗機場。把搬運行李的勞累交給我們，您只需優雅上車。</li>
-                             <li><strong>頂尖防護：</strong>特別為我們 6 個月大的小寶貝，安排了全面深度清消的「頂級反向安全座椅」。在寬敞的 9 人座商務艙空間裡，長輩能舒展雙腿，寶貝能安穩補眠。</li>
-                         </ul>
-                     </div>
-                 </div>
-                 <div class="card info-card">
-                     <div class="card-content full-width">
-                         <h2 class="card-title">【星宇航空】精品級的高空飛行</h2>
-                         <ul>
-                             <li><strong>09:30 搭乘星宇航空 Airbus A321neo 質感起飛。</strong>寬敞的座位配備專屬娛樂系統，在高空中品嚐機上限定的精緻餐點，讓度假的愉悅從機艙內就開始蔓延。</li>
-                         </ul>
-                         <div class="note calm">
-                             <div class="note-header-wrap"><strong>💡 專屬管家視角 (VIP 通關秘訣)：</strong></div>
-                             帶著寶貝同行，我們享有尊榮的隱形特權！安檢時主動示意，即可解鎖優先通道（Priority Lane），大幅省去排隊時間。推車可一路推至機艙口採「機邊託運」，保溫瓶內的泡奶熱水亦可安心攜帶過海關。
-                         </div>
-                     </div>
-                 </div>
+                <div class="card info-card">
+                    <div class="card-content full-width">
+                        <h2 class="card-title">專屬接送安排</h2>
+                        <ul>
+                            <li><strong>建議出發時間：</strong> 配合星宇航空 10:40 的航班，且適逢週末出國尖峰，建議 <strong>06:00
+                                    於豐原出發</strong>，<strong>06:20 於潭子接駁</strong>，預計 07:40 抵達桃園國際機場，為全家保留充裕的 3 小時報到時間。
+                            </li>
+                            <li><strong>預定行駛路線：</strong>
+                                豐原上車後往潭子會合，接著由國道四號銜接國道一號北上。過新竹後將直上<strong>五楊高架</strong>，避開假日平面車流，一路順暢直達桃園機場第一航廈。</li>
+                            <li><strong>職人專屬派車：</strong> 針對 4 大 1 嬰兒的黃金組合與大件行李，安排<strong>頂級 9 人座商務車（如福斯
+                                    T6.1）</strong>，並為 6 個月大的小寶貝準備<strong>符合安規的嬰兒反向汽車座椅</strong>，讓全家人平穩舒適地開啟旅程。</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card info-card">
+                    <div class="card-content full-width">
+                        <h2 class="card-title">航班資訊預覽</h2>
+                        <ul>
+                            <li><strong>航班動態：</strong> 6/6 星宇航空 JX802，10:40 桃園機場 (TPE) 起飛 ➡️ 15:05 抵達東京成田 (NRT)。</li>
+                            <li><strong>航機與娛樂：</strong> 執飛機型為星宇最新旗艦 <strong>Airbus A350-1000</strong>。經濟艙即配備 13.3 吋 4K
+                                高畫質螢幕並支援藍牙耳機連線，座位皆提供 USB 及 Type-C 雙充電插座。餐點更有機會享用經典的「胡同燒肉」聯名飛機餐！</li>
+                        </ul>
+                        <div class="note calm">
+                            <div class="note-header-wrap"><strong>💡 職人提醒 (機場通關秘訣)：</strong></div>
+                            <strong>週末出境人潮預警：</strong>星期六早上是桃園機場的超級尖峰！帶 6 個月大的嬰兒同行，抵達 T1 後請務必主動詢問地勤是否有優先通道（Priority
+                            Lane）或愛心通道，能大幅節省排隊安檢時間。<br><br>
+                            <strong>機邊託運與泡奶準備：</strong>嬰兒推車可以直接推到登機門，採「機邊託運」。保溫瓶內是可以攜帶泡奶用的熱水，安檢時只要主動向海關人員出示並告知為嬰兒所需即可，免去重新找飲水機的麻煩。
+                        </div>
+                    </div>
+                </div>
             </div>
-         </div>
+        </div>
 
         <!-- =============== 陸地篇 (Day 1 - 4) =============== -->
 
         <!-- Day 1 -->
         <div class="day-section" id="day1">
             <div class="day-header" onclick="toggleSection('day1-content', this)">
-                Day 1：6/6 (週六) 破風而行，夜賞極上和牛的私享接風宴 
+                🗓️ Day 1 ｜ 暮色迎賓：御用座駕直達富士山麓，私享極上和牛壽喜燒
                 <span class="toggle-icon">▲</span>
             </div>
-            
+
             <div class="day-content" id="day1-content">
                 <div class="card">
                     <div class="card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=800&auto=format&fit=crop" alt="成田機場會合" class="card-img" loading="lazy">
+                        <img src="https://rainieis.tw/wp-content/uploads/54408495_813907485642550_314107030124101632_n.jpg"
+                            alt="星宇降落與尊榮極速通關" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
-                        <div class="time-badge">14:00 - 15:30</div>
-                        <h2 class="card-title">順利會合與通關</h2>
+                        <div class="time-badge">15:05 - 16:15</div>
+                        <h2 class="card-title">【專屬禮遇】星宇降落與尊榮極速通關</h2>
+                        <div class="note calm">
+                            <div class="note-header-wrap"><strong>星宇迎賓：</strong></div>
+                            星宇航空 JX802 航班於 15:05 劃破天際，平穩降落成田機場。您與家人即將踏上這趟精心籌備的完美旅途。
+                        </div>
                         <div class="note">
-                            <div class="note-header-wrap"><strong>小嵐亮點：</strong></div>
-                            在成田機場順利會合領取行李，準備開啟美好的家族旅行！
+                            <div class="note-header-wrap"><strong>專屬管家視角：</strong></div>
+                            在成田機場大廳，我們已為您備妥溫暖的笑容相迎。懷抱著 6
+                            個月大的小寶貝，我們將引導您優先使用「愛心禮遇通道」無縫通關。請將繁重的行李託付給我們，您只需牽著思璇與長輩的手，帶著輕鬆的笑容，以最從容的姿態揭開假期的序幕。
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-img-wrapper">
-                         <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?q=80&w=800&auto=format&fit=crop" alt="超商採買" class="card-img" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?q=80&w=800&auto=format&fit=crop"
+                            alt="超商採買" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
-                        <div class="time-badge">15:30 - 16:00</div>
-                        <h2 class="card-title">機場便利商店大採買</h2>
+                        <div class="time-badge">16:15 - 16:30</div>
+                        <h2 class="card-title">【餘裕時刻】機場選品與精緻採買</h2>
                         <div class="note">
                             <div class="note-header-wrap"><strong>完美動線：</strong></div>
-                            不在機場餐廳人擠人！派兩位壯丁去 Lawson 或 7-11，把今晚想喝的水、飲料、甜點，以及明天的簡易早餐一次買齊直接帶上車。
+                            為了將最珍貴的時光保留給富士山，我們將這 15 分鐘化為最高效的選品時刻。無須在機場餐廳與人潮推擠，由兩位家人以最俐落的步伐前往 Lawson 或
+                            7-11，為思璇挑選今晚佐茶的精緻甜點、長輩喜愛的解饞小點，以及明日的晨間輕食。將這些充滿期待的美味提上專車，成為路途中的小確幸。
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-img-wrapper">
-                        <img src="https://www.japanholiday.net/wp-content/uploads/2024/03/fuji-gran-villa-toki2.jpg" alt="直達河口湖" class="card-img" loading="lazy">
+                        <img src="https://bossguest.com/submainPic/175199341112333%20(1).jpg"
+                            alt="旗艦座艙直達 Fuji Gran Villa" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
-                        <div class="time-badge">16:00 - 19:00</div>
-                        <h2 class="card-title">包車直達河口湖 Fuji Gran Villa</h2>
-                        <p class="card-desc">辦理入住，放下行李，準備迎接放鬆的夜晚。</p>
+                        <div class="time-badge">16:30 - 18:50</div>
+                        <h2 class="card-title">【無縫接軌】旗艦座艙直達 Fuji Gran Villa</h2>
                         <div class="note calm">
-                             <div class="note-header-wrap"><strong>貼心叮嚀：</strong></div>
-                             剛好是吃飽想睡的時刻，小寶貝跟長輩可以在車上安穩補眠，一路直達富士山。中途若需使用洗手間，隨時請司機停靠乾淨舒適的高速公路休息站。
+                            <div class="note-header-wrap"><strong>五感體驗：</strong></div>
+                            安坐於頂規商務車的真皮座椅中，車廂內的恆溫與靜謐，讓小寶貝與長輩能在平穩的節奏裡安心沉睡。窗外景致隨著光影流轉，由繁華的東京高樓，悄然退換成鬱鬱蔥蔥的山林。當您輕揉雙眼，暮色中的壯麗富士山與極具質感的
+                            Villa 已靜靜佇立眼前。
+                        </div>
+                        <div class="note">
+                            <div class="note-header-wrap"><strong>專屬管家視角：</strong></div>
+                            為確保在 19:00
+                            前優雅下榻，職人司機會憑藉深厚的經驗，為您精準導航最順暢的高速路段直達山麓。為求效率，沿途不作繁雜的餐食停留，但只要家人輕聲吩咐，專車將隨時平穩停靠於設施完善且乾淨的 SA/PA
+                            休息站，讓您舒展筋骨，一切以家人的舒適度為最高信仰。
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-img-wrapper">
-                        <img src="https://fujigran.toki223.com/cms/wp-content/themes/fuji/img/food/option_img8.jpg?250805" alt="專屬壽喜燒" class="card-img" loading="lazy">
+                        <img src="https://www.japanholiday.net/wp-content/uploads/2024/03/fuji-gran-villa-toki2.jpg"
+                            alt="優雅下榻" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
-                        <div class="time-badge">19:30 - </div>
-                        <h2 class="card-title">【極上盛宴】Villa 隱密私享，和牛壽喜燒</h2>
+                        <div class="time-badge">18:50 - 19:00</div>
+                        <h2 class="card-title">【尊榮抵達】優雅下榻，私屬領地</h2>
                         <div class="note">
-                            <div class="note-header-wrap"><strong>用餐體驗：</strong></div>
-                            褪去一身舟車勞頓，無須在寒風中尋覓餐館。當您與家人換上最輕便的衣裳，Villa 內已為您備妥熱氣騰騰的頂級壽喜燒。頂級和牛的油脂香氣在鍋中綻放，伴隨著家人的笑語，這正是最完美的專屬接風洗塵。
+                            <div class="note-header-wrap"><strong>完美達標：</strong></div>
+                            在夜幕低垂的 19:00 前，專車分秒不差地駛入別墅區。管家已為您打點好一切 Check-in 手續，您只需輕盈轉身，將沉重的行李留在身後，準備投入富士山溫柔的放鬆之夜。
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="https://fujigran.toki223.com/cms/wp-content/themes/fuji/img/food/option_img8.jpg?250805"
+                            alt="專屬壽喜燒" class="card-img" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <div class="time-badge">19:30 -</div>
+                        <h2 class="card-title">【極上盛宴】Villa 隱密私享，頂級和牛壽喜燒</h2>
+                        <div class="note">
+                            <div class="note-header-wrap"><strong>五感體驗：</strong></div>
+                            褪去一日的舟車勞頓，今晚，我們拒絕在夜風中尋覓餐館的奔波。當您與家人換上最舒適的居家輕裝步入客廳，映入眼簾的是已為您備妥、熱氣騰騰的頂級壽喜燒。頂級和牛細緻的油花在日式醬汁中輕吟綻放，撲鼻的脂香交織著全家人的歡聲笑語，這是專屬於您家族，最極致奢華的接風洗塵。
                         </div>
                     </div>
                 </div>
 
                 <div class="map-link-container">
-                    <a href="https://www.google.com/maps/dir/成田國際機場/Fuji+Gran+Villa+-+TOKI+-/" target="_blank" class="map-btn">
+                    <a href="https://www.google.com/maps/dir/成田國際機場/Fuji+Gran+Villa+-+TOKI+-/" target="_blank"
+                        class="map-btn">
                         <span>📍</span> 開啟 Day 1 行程導航地圖
                     </a>
-                    <iframe 
-                        class="map-iframe" 
-                        src="https://maps.google.com/maps?saddr=成田國際機場&daddr=Fuji+Gran+Villa+-+TOKI+-&output=embed" 
-                        title="Day 1 導航地圖"
-                        allowfullscreen="" 
-                        loading="lazy">
+                    <iframe class="map-iframe"
+                        src="https://maps.google.com/maps?saddr=成田國際機場&daddr=Fuji+Gran+Villa+-+TOKI+-&output=embed"
+                        title="Day 1 導航地圖" allowfullscreen="" loading="lazy">
                     </iframe>
                 </div>
             </div>
@@ -650,288 +757,303 @@
         <!-- Day 2 -->
         <div class="day-section" id="day2">
             <div class="day-header" onclick="toggleSection('day2-content', this)">
-                Day 2：6/7 (週日) 湖畔慢光陰：擁抱富士百態與職人夢幻烘焙
+                🗓️ Day 2 ｜ 湖畔慢光陰：擁抱富士百態與職人夢幻烘焙
                 <span class="toggle-icon">▲</span>
             </div>
-            
+
             <div class="day-content" id="day2-content">
                 <div class="card text-card">
                     <div class="card-content full-width" style="padding: 16px 24px;">
-                         <p class="card-desc"><strong>08:30 ｜ 滿電出發</strong></p>
-                         <div class="note calm">
-                             <div class="note-header-wrap"><strong>貼心叮嚀：</strong></div>
-                             提早半小時從別墅出發，搶佔今天河口湖最清幽的早晨時光，完美避開週日觀光人潮！
-                         </div>
+                        <p class="card-desc"><strong>08:30 ｜ 從容啟程：晨光與微風</strong></p>
+                        <div class="note calm">
+                            <div class="note-header-wrap"><strong>專屬管家視角：</strong></div>
+                            提早半小時從別墅出發，我們將搶佔河口湖最清幽的早晨時光，完美避開週日的觀光人潮，享受屬於家族的寧靜。
+                        </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-img-wrapper">
-                         <img src="https://www.settour.com.tw/ss_img/info/location/YMN/N0/YMN0000025/YMN0000025_41769.jpg" alt="富士山景觀纜車" class="card-img" loading="lazy">
+                        <img src="https://www.settour.com.tw/ss_img/info/location/YMN/N0/YMN0000025/YMN0000025_41769.jpg"
+                            alt="富士山景觀纜車" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">08:45 - 10:15</div>
-                        <h2 class="card-title">景點：富士山景觀纜車</h2>
+                        <h2 class="card-title">絕景盡收：富士山景觀纜車</h2>
                         <div class="note">
-                            <div class="note-header-wrap"><strong>小嵐亮點：</strong></div>
-                            趁 09:00 剛營業、團客還沒抵達前就先上去。這時候山上的空氣最通透，拍全家福的光線也最漂亮。因為纜車上下人多，建議將嬰兒推車暫時換成揹巾，機動性會更高喔！
+                            <div class="note-header-wrap"><strong>五感體驗：</strong></div>
+                            趁著剛營業的通透空氣，我們躍上高空。此時的光線最為純粹，是拍下全家福大片的魔幻時刻。
+                        </div>
+                        <div class="note calm">
+                            <div class="note-header-wrap"><strong>專屬管家視角：</strong></div>
+                            因纜車動線考量，建議將嬰兒推車暫時換成揹巾，將小寶貝溫暖地擁在懷中，機動性更高。
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-img-wrapper">
-                        <img src="https://www.fujiyamacookie.jp/product/a6808900000001ge-img/DSC03529.jpg" alt="FUJIYAMA COOKIE" class="card-img" loading="lazy">
+                        <img src="https://www.fujiyamacookie.jp/product/a6808900000001ge-img/DSC03529.jpg"
+                            alt="FUJIYAMA COOKIE" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">10:15 - 10:25</div>
-                        <h2 class="card-title">伴手禮：FUJIYAMA COOKIE</h2>
+                        <h2 class="card-title">專屬餽贈：FUJIYAMA COOKIE</h2>
                         <div class="note">
                             <div class="note-header-wrap"><strong>完美動線：</strong></div>
-                            纜車搭下來剛好順路！店家 10:00 已開門，花 10 分鐘快速挑選嚴選奶油製作的招牌富士山造型餅乾，提上車當最棒的伴手禮。
+                            漫步下山，剛好迎上店鋪大門敞開。花 10 分鐘挑選那散發著嚴選奶油香氣的富士山造型餅乾，將美好的心意提上車。
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-img-wrapper">
-                        <img src="https://static.gltjp.com/glt/data/directory/13000/12079/20210826_141254_3028f3a9_w1920.webp" alt="天晴號遊覽船" class="card-img" loading="lazy">
+                        <img src="https://static.gltjp.com/glt/data/directory/13000/12079/20210826_141254_3028f3a9_w1920.webp"
+                            alt="天晴號遊覽船" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">10:30 - 11:00</div>
-                        <h2 class="card-title">景點：天晴號遊覽船 (機動彈性)</h2>
+                        <h2 class="card-title">水色巡禮：天晴號遊覽船 (機動彈性)</h2>
                         <div class="note calm">
-                            <div class="note-header-wrap"><strong>達人帶路：</strong></div>
-                            走到對面碼頭搭乘。遊湖一圈大約 20 分鐘，安排 30 分鐘非常餘裕。如果提早結束，就直接提早前往下一站，保持行程最高彈性。
+                            <div class="note-header-wrap"><strong>五感體驗：</strong></div>
+                            在對面碼頭登船，微風徐徐，波光粼粼。為行程保留最高彈性，若提早結束便悠然前往下一站。
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-img-wrapper">
-                        <img src="https://s.yimg.com/ny/api/res/1.2/LpJhlgUTo5j9k8500oE.Ow--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTgwMA--/https://media.zenfs.com/en/homita_556/409873cec4793ffea7f178fbbde6d120" alt="富士山吐司" class="card-img" loading="lazy">
+                        <img src="https://s.yimg.com/ny/api/res/1.2/LpJhlgUTo5j9k8500oE.Ow--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTgwMA--/https://media.zenfs.com/en/homita_556/409873cec4793ffea7f178fbbde6d120"
+                            alt="富士山吐司" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">11:05 - 11:20</div>
-                        <h2 class="card-title">私房安插：食パン専門店 FUJISAN SHOKUPAN</h2>
+                        <h2 class="card-title">私房香氣：食パン専門店 FUJISAN SHOKUPAN</h2>
                         <div class="note">
                             <div class="note-header-wrap"><strong>完美動線：</strong></div>
-                            剛好迎接 11:00 開店！品項最齊全，派代表快速下車把思璇指定的藍白相間「富士山吐司」買齊，提上車滿滿都是幸福的香氣。
+                            精準踩點開店時刻！派代表將思璇心心念念、藍白相間的「富士山夢幻吐司」買齊，車廂內瞬間滿溢著幸福的碳水香氣。
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-img-wrapper">
-                         <img src="https://img.bigfang.tw/2025/04/1744638082-4efdd2f969559e8b1c92e99f32ded48e.jpg" alt="ほうとう不動" class="card-img" loading="lazy">
+                        <img src="https://img.bigfang.tw/2025/04/1744638082-4efdd2f969559e8b1c92e99f32ded48e.jpg"
+                            alt="ほうとう不動" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">11:30 - 13:30</div>
-                        <h2 class="card-title">午餐必吃：ほうとう不動 河口湖北本店</h2>
+                        <h2 class="card-title">暖胃首選：ほうとう不動 河口湖北本店</h2>
                         <div class="note">
-                            <div class="note-header-wrap"><strong>用餐體驗：</strong></div>
-                            提早入座免去排隊之苦。傳統日式木造大空間，超寬敞的榻榻米座位讓大人們能脫鞋徹底放鬆雙腿。這完整的兩小時也是處理 6 個月大小寶貝喝奶、換尿布的最佳中場休息，全家一起分享熱呼呼的蔬菜餺飥麵，暖胃又滿足！
+                            <div class="note-header-wrap"><strong>五感體驗：</strong></div>
+                            提早入座，免去排隊之苦。在寬敞的傳統木造榻榻米上，大人們脫鞋徹底舒展雙腿，小寶貝也能在安全的軟墊上自在翻滾。全家共享一鍋熱呼呼的蔬菜餺飥麵，暖胃更暖心。
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-img-wrapper">
-                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLzBzuLgWgTe-RLGwflWHdgo-Nn0HK5RSxEw&s" alt="河口湖音樂盒之森美術館" class="card-img" loading="lazy">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLzBzuLgWgTe-RLGwflWHdgo-Nn0HK5RSxEw&s"
+                            alt="河口湖音樂盒之森美術館" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">13:45 - 15:15</div>
-                        <h2 class="card-title">景點：河口湖音樂盒之森美術館</h2>
+                        <h2 class="card-title">歐洲風情：河口湖音樂盒之森美術館</h2>
                         <div class="note">
-                            <div class="note-header-wrap"><strong>小嵐亮點：</strong></div>
-                            吃飽後散步的最佳地點。推著嬰兒車在平緩的無障礙步道上欣賞充滿歐洲風情的庭園建築，聽聽音樂盒表演，節奏優雅。
+                            <div class="note-header-wrap"><strong>感官體驗：</strong></div>
+                            餐後的完美散策。推著嬰兒車在平緩的無障礙步道上漫步，充滿歐洲風情的庭園建築交織著優雅的音樂盒旋律，步調不自覺地慢了下來。
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-img-wrapper">
-                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0l8fBKQUXioi-MtVPjik3UpAuGpHlXJPgcQ&s" alt="大石公園" class="card-img" loading="lazy">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0l8fBKQUXioi-MtVPjik3UpAuGpHlXJPgcQ&s"
+                            alt="大石公園" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">15:25 - 16:25</div>
-                        <h2 class="card-title">景點：大石公園</h2>
+                        <h2 class="card-title">花海漫步：大石公園</h2>
                         <div class="note">
-                            <div class="note-header-wrap"><strong>小嵐亮點：</strong></div>
-                            漫步湖畔自然花海，推著推車邊走邊賞花。這時候記得拿出早上買的富士山吐司，以真正的富士山為背景，拍下極具巧思的家族打卡照！
+                            <div class="note-header-wrap"><strong>五感體驗：</strong></div>
+                            漫步湖畔自然花海，以真正的壯麗富士為背景，拿出早晨買的富士山吐司，拍下極具巧思且充滿歡笑的家族打卡照。
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-img-wrapper">
-                         <img src="https://media.nownews.com/nn_media/thumbnail/2022/06/1655168938906-e71d9deea0ef418d8cf0d10b13f3d696-800x532.jpg" alt="Lawson 河口湖役場前店" class="card-img" loading="lazy">
+                        <img src="https://media.nownews.com/nn_media/thumbnail/2022/06/1655168938906-e71d9deea0ef418d8cf0d10b13f3d696-800x532.jpg"
+                            alt="Lawson 河口湖役場前店" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">16:40 - 17:00</div>
-                        <h2 class="card-title">私房打卡：Lawson 河口湖役場前店 (機動插入點)</h2>
+                        <h2 class="card-title">餘暉獨享：Lawson 河口湖役場前店 (機動插入點)</h2>
                         <div class="note calm">
-                            <div class="note-header-wrap"><strong>達人帶路：</strong></div>
-                            把原本早上的 Lawson 移到這裡！如果前面遊覽船有提早結束，這段時間剛好拿來拍照。下午光線柔和，且役場前店腹地較大，九人座商務車好停，推著嬰兒車拍照也安全許多，完全不需要跟人擠。
+                            <div class="note-header-wrap"><strong>專屬管家視角：</strong></div>
+                            將網紅打卡點移至午後！此時光線柔和，且該店腹地寬廣，商務車停妥後，推著嬰兒車也能安全從容地拍出絕美照片，完全無需與人推擠。
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-img-wrapper">
-                         <img src="https://rimage.hitosara.com/gg/image/0005005587/0005005587E1_750x500s.jpg" alt="和牛燒肉" class="card-img" loading="lazy">
+                        <img src="https://rimage.hitosara.com/gg/image/0005005587/0005005587E1_750x500s.jpg" alt="和牛燒肉"
+                            class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">17:00 - 18:30</div>
-                        <h2 class="card-title">晚餐必吃：焼肉 ひまわり亭 (向日葵亭) 與返回 Villa</h2>
+                        <h2 class="card-title">極致炙烤：焼肉 ひまわり亭 (向日葵亭) 與優雅返程</h2>
                         <div class="note">
-                            <div class="note-header-wrap"><strong>用餐體驗：</strong></div>
-                            17:00 抵達完美避開週日晚上的排隊人潮！在地人超推的高 CP 值和牛燒肉，肉質極佳，且有日式包廂座位（掘りごたつ），長輩不用盤腿也能坐得很舒服。
+                            <div class="note-header-wrap"><strong>五感體驗：</strong></div>
+                            17:00 準時入座在地人私藏的高 CP 值和牛燒肉。為長輩貼心安排了日式掘座敷（下挖式座位），不用盤腿也能愜意享受油花均勻的頂級燒烤。
                         </div>
                         <div class="note calm">
-                            <div class="note-header-wrap"><strong>貼心叮嚀：</strong></div>
-                            大口吃肉滿足後，大約 18:15 上車，15 分鐘車程即可輕鬆回到 Villa。將包車時間完美掌控在 10 小時內（08:30 - 18:30），無須支付超時費，早早回別墅休息泡澡！
+                            <div class="note-header-wrap"><strong>專屬管家視角：</strong></div>
+                            大口吃肉滿足後，僅需 15 分鐘車程即可輕鬆回到 Villa。早早回別墅放熱水泡澡，為美好的一天畫下療癒句點。
                         </div>
                     </div>
                 </div>
 
                 <div class="map-link-container">
-                    <a href="https://www.google.com/maps/dir/Fuji+Gran+Villa+-+TOKI+-/富士山景觀纜車/FUJIYAMA+COOKIE/天晴號遊覽船/食パン専門店+FUJISAN+SHOKUPAN/ほうとう不動+河口湖北本店/河口湖音樂盒之森美術館/河口湖大石公園/Lawson+河口湖役場前店/焼肉+ひまわり亭/" target="_blank" class="map-btn">
+                    <a href="https://www.google.com/maps/dir/Fuji+Gran+Villa+-+TOKI+-/富士山景觀纜車/FUJIYAMA+COOKIE/天晴號遊覽船/食パン専門店+FUJISAN+SHOKUPAN/ほうとう不動+河口湖北本店/河口湖音樂盒之森美術館/河口湖大石公園/Lawson+河口湖役場前店/焼肉+ひまわり亭/"
+                        target="_blank" class="map-btn">
                         <span>📍</span> 開啟 Day 2 行程導航地圖
                     </a>
-                    <iframe 
-                        class="map-iframe" 
-                        src="https://maps.google.com/maps?saddr=Fuji+Gran+Villa+-+TOKI+-&daddr=富士山景觀纜車+to:FUJIYAMA+COOKIE+to:天晴號遊覽船+to:食パン専門店+FUJISAN+SHOKUPAN+to:ほうとう不動+河口湖北本店+to:河口湖音樂盒之森美術館+to:河口湖大石公園+to:Lawson+河口湖役場前店+to:焼肉+ひまわり亭&output=embed" 
-                        title="Day 2 導航地圖"
-                        allowfullscreen="" 
-                        loading="lazy">
+                    <iframe class="map-iframe"
+                        src="https://maps.google.com/maps?saddr=Fuji+Gran+Villa+-+TOKI+-&daddr=富士山景觀纜車+to:FUJIYAMA+COOKIE+to:天晴號遊覽船+to:食パン専門店+FUJISAN+SHOKUPAN+to:ほうとう不動+河口湖北本店+to:河口湖音樂盒之森美術館+to:河口湖大石公園+to:Lawson+河口湖役場前店+to:焼肉+ひまわり亭&output=embed"
+                        title="Day 2 導航地圖" allowfullscreen="" loading="lazy">
                     </iframe>
                 </div>
             </div>
         </div>
-
         <!-- Day 3 -->
         <div class="day-section" id="day3">
             <div class="day-header" onclick="toggleSection('day3-content', this)">
-                Day 3：6/8 (週一) 文化與秘境：神木祈福與極品炸豬排
+                🗓️ Day 3 ｜ 秘境祈福：古木參天下的寧靜與極上金黃豬排
                 <span class="toggle-icon">▲</span>
             </div>
-            
+
             <div class="day-content" id="day3-content">
                 <div class="card text-card">
                     <div class="card-content full-width" style="padding: 16px 24px;">
-                         <p class="card-desc"><strong>09:30 ｜ 悠閒出發</strong><br>從別墅睡飽出發，享受富士山早晨的清新空氣，完全不用趕時間！</p>
+                        <p class="card-desc"><strong>09:30 ｜
+                                悠閒出發：晨光甦醒</strong><br>從別墅睡飽自然醒，大口呼吸富士山早晨的清新空氣，沒有晨喚的催促，只有假期的從容。</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-img-wrapper">
-                         <!-- 本町二丁目照片 -->
-                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSctuqutOzb5nwOMkwTyHgu9QpRHYKbhFGv3A&s" alt="本町二丁目商店街" class="card-img" loading="lazy">
+                        <!-- 本町二丁目照片 -->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSctuqutOzb5nwOMkwTyHgu9QpRHYKbhFGv3A&s"
+                            alt="本町二丁目商店街" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">09:40 - 10:00</div>
-                        <h2 class="card-title">📸 私房打卡：ほんちょう２丁目商店街 (本町二丁目)</h2>
+                        <h2 class="card-title">📸 昭和光影：ほんちょう２丁目商店街 (本町二丁目)</h2>
                         <div class="note">
                             <div class="note-header-wrap"><strong>完美動線：</strong></div>
-                            前往神社前順路安插！這條昭和復古街道的盡頭就是巨大的富士山，視覺震撼力極強，下車散步拍個 15 分鐘的大片再出發，時間剛剛好！
+                            前往神社前順路停靠！復古街道的盡頭矗立著巨大的富士山，視覺震撼力極強。下車輕鬆散步 15 分鐘，隨手一按都是宛如電影海報的家族大片。
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-img-wrapper">
-                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP4UNao5e064emTbMj5WnKf12oxjx7RoGHFg&s" alt="神社" class="card-img" loading="lazy">
+                        <img src="https://static.gltjp.com/glt/data/directory/16000/15585/20240321_085130_8a8c6df4_w1920.webp"
+                            alt="神社" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">10:00 - 11:30</div>
-                        <h2 class="card-title">景點：北口本宮富士淺間神社</h2>
+                        <h2 class="card-title">沐浴芬多精：北口本宮富士淺間神社</h2>
                         <div class="note">
-                            <div class="note-header-wrap"><strong>小嵐亮點：</strong></div>
-                            這裡擁有非常壯觀的巨大神木群，而且步道非常平緩，推著嬰兒車散步也毫無障礙。全家人可以在這裡吸收滿滿的芬多精，祈求旅途平安。
+                            <div class="note-header-wrap"><strong>五感體驗：</strong></div>
+                            推著嬰兒車，漫步在平緩的無障礙參道上。巨木參天，微風拂過，全家人在這裡吸收滿滿的芬多精，雙手合十，祈求歲月靜好、旅途平安。
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-img-wrapper">
-                         <img src="https://www.porta-y.jp/wp-content/uploads/2025/05/local-specialty2025_genroku_2.jpg" alt="炸豬排" class="card-img" loading="lazy">
+                        <img src="https://www.porta-y.jp/wp-content/uploads/2024/10/tonkatsu-genroku-241016-3.jpg"
+                            alt="炸豬排" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">11:35 - 13:10</div>
-                        <h2 class="card-title">午餐必吃：とんかつ 元祿（在地極品炸豬排）</h2>
+                        <h2 class="card-title">酥脆誘惑：とんかつ 元祿（在地極品炸豬排）</h2>
                         <div class="note calm">
                             <div class="note-header-wrap"><strong>完美動線：</strong></div>
-                            逛完神社一上車，只要短短 2 分鐘就到餐廳啦！提早一點點抵達，剛好能避開正中午的用餐人潮。
+                            逛完神社上車，短短 2 分鐘即可入座老店，完美避開正午人潮。
                         </div>
                         <div class="note">
-                            <div class="note-header-wrap"><strong>用餐體驗：</strong></div>
-                            這家老店的豬排外酥內嫩，長輩吃起來也毫不費力！店內空間寬敞，有日式的榻榻米區，大人們可以脫掉鞋子舒展雙腿，小寶貝也能在墊子上安全自在地休息，全家一起大口扒白飯絕對超滿足！
+                            <div class="note-header-wrap"><strong>五感體驗：</strong></div>
+                            咬下外酥內嫩的極品炸豬排，喀滋聲中是傳承多年的職人火候，軟嫩肉質讓長輩也能輕鬆大快朵頤！寬敞的榻榻米區讓全家能大口扒著白飯，感受最純粹的滿足。
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-img-wrapper">
-                         <img src="https://static.gltjp.com/glt/data/directory/12000/11258/20201026_053312_589e6620_w1920.webp" alt="忍野八海" class="card-img" loading="lazy">
+                        <img src="https://static.gltjp.com/glt/data/directory/12000/11258/20201026_053312_589e6620_w1920.webp"
+                            alt="忍野八海" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">13:40 - 15:00</div>
-                        <h2 class="card-title">景點：忍野八海</h2>
+                        <h2 class="card-title">澄澈藍寶石：忍野八海</h2>
                         <div class="note">
-                            <div class="note-header-wrap"><strong>小嵐亮點：</strong></div>
-                            吃飽喝足後，搭車約 15 分鐘前往這處湧泉名勝。富士山的雪水經過層層過濾湧出，水池清澈見底，就像是一塊塊藍寶石！
+                            <div class="note-header-wrap"><strong>感官體驗：</strong></div>
+                            富士山的雪水經過層層過濾湧出，水池清澈見底。
                         </div>
                         <div class="note calm">
-                            <div class="note-header-wrap"><strong>貼心叮嚀：</strong></div>
-                            因為這裡通常遊客比較多，且部分路段人擠人，建議把嬰兒推車留在包車上，用「嬰兒背巾」揹著小寶貝逛，機動性會高很多喔！
+                            <div class="note-header-wrap"><strong>專屬管家視角：</strong></div>
+                            此處遊客熙攘，建議將嬰兒推車留在專車上，用溫暖的背巾揹著小寶貝漫步，享受極高的機動性與貼身的安全感。
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-img-wrapper">
-                         <img src="https://sliptojapan.com/wp-content/uploads/2025/04/fujisan-kawaguchiko-spot_%E5%B1%B1%E4%B8%AD%E6%B9%96%E5%B9%B3%E9%87%8E%E3%81%AE%E6%B5%9C-AC.jpeg" alt="平野之濱" class="card-img" loading="lazy">
+                        <img src="https://sliptojapan.com/wp-content/uploads/2025/04/fujisan-kawaguchiko-spot_%E5%B1%B1%E4%B8%AD%E6%B9%96%E5%B9%B3%E9%87%8E%E3%81%AE%E6%B5%9C-AC.jpeg"
+                            alt="平野之濱" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">15:20 - 16:30</div>
-                        <h2 class="card-title">景點：山中湖 平野之濱</h2>
+                        <h2 class="card-title">私房絕景：山中湖 平野之濱</h2>
                         <div class="note">
-                            <div class="note-header-wrap"><strong>小嵐亮點：</strong></div>
-                            離開湧泉後，前往人少好拍照的私房秘境「平野之濱」。讓小寶貝看看湖畔優雅的白天鵝，幸運的話，還能拍到天鵝與巨大富士山同框的夢幻家族合照！湖畔風可能稍大，下車前記得幫大家多加件防風外套。
+                            <div class="note-header-wrap"><strong>五感體驗：</strong></div>
+                            轉往人煙稀少的私房秘境。讓小寶貝看著湖畔優雅的白天鵝，幸運的話，將天鵝與巨大富士山同框，拍下毫無干擾的夢幻全家福。湖畔微風輕拂，記得為家人披上一件防風外套。
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-img-wrapper">
-                         <img src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?q=80&w=800&auto=format&fit=crop" alt="購物與晚餐" class="card-img" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?q=80&w=800&auto=format&fit=crop"
+                            alt="購物與晚餐" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">17:00 - 19:00</div>
-                        <h2 class="card-title">晚餐與採買：BELL 購物中心 / Gusto 家庭餐廳</h2>
-                        <p class="card-desc">19:15 回到 Villa 休息。帶著滿滿的戰利品與回憶回到別墅，全家人輕鬆地整理行李，準備迎接隔天前往東京優雅登船的行程啦！</p>
+                        <h2 class="card-title">滿載而歸：BELL 購物中心 / Gusto 家庭餐廳</h2>
+                        <p class="card-desc">19:15 帶著豐碩的戰利品回到 Villa，輕鬆整理行囊，期待明日的豪華登船。</p>
                         <div class="note">
                             <div class="note-header-wrap"><strong>一站式滿足：</strong></div>
-                            順著路回到河口湖市區。長輩和思璇可以直奔 BELL 購物中心地下一樓的超市與一樓的藥妝店，把想帶上郵輪的零食與伴手禮一次買齊！
+                            順路返回市區，長輩與思璇直奔商場超市與藥妝店，將想帶上郵輪的零嘴與伴手禮優雅買齊。
                         </div>
                         <div class="note">
-                            <div class="note-header-wrap"><strong>輕鬆晚餐：</strong></div>
-                            晚餐直接在商場的美食街，或是隔壁對推車極度友善的「Gusto」家庭餐廳輕鬆解決。座位超大，用平板看圖點餐，毫無點餐壓力。
+                            <div class="note-header-wrap"><strong>輕鬆晚宴：</strong></div>
+                            在空間寬敞、對推車極度友善的 Gusto 家庭餐廳，用平板無壓力點餐。
                         </div>
                     </div>
                 </div>
 
                 <div class="map-link-container">
-                    <a href="https://www.google.com/maps/dir/Fuji+Grand+Villa+-+Toki/本町二丁目商店街/北口本宮富士淺間神社/元祿+日式炸豬排牛排/忍野八海/平野之濱/Kawaguchiko+Shopping+Center+BELL/" target="_blank" class="map-btn">
+                    <a href="https://www.google.com/maps/dir/Fuji+Grand+Villa+-+Toki/本町二丁目商店街/北口本宮富士淺間神社/元祿+日式炸豬排牛排/忍野八海/平野之濱/Kawaguchiko+Shopping+Center+BELL/"
+                        target="_blank" class="map-btn">
                         <span>📍</span> 開啟 Day 3 行程導航地圖
                     </a>
-                    <iframe 
-                        class="map-iframe" 
-                        src="https://maps.google.com/maps?saddr=Fuji+Grand+Villa+-+Toki&daddr=本町二丁目商店街+to:北口本宮富士淺間神社+to:元祿+日式炸豬排牛排+to:忍野八海+to:平野之濱+to:Kawaguchiko+Shopping+Center+BELL+to:Fuji+Grand+Villa+-+Toki&output=embed" 
-                        title="Day 3 導航地圖"
-                        allowfullscreen="" 
-                        loading="lazy">
+                    <iframe class="map-iframe"
+                        src="https://maps.google.com/maps?saddr=Fuji+Grand+Villa+-+Toki&daddr=本町二丁目商店街+to:北口本宮富士淺間神社+to:元祿+日式炸豬排牛排+to:忍野八海+to:平野之濱+to:Kawaguchiko+Shopping+Center+BELL+to:Fuji+Grand+Villa+-+Toki&output=embed"
+                        title="Day 3 導航地圖" allowfullscreen="" loading="lazy">
                     </iframe>
                 </div>
             </div>
@@ -940,44 +1062,43 @@
         <!-- Day 4 -->
         <div class="day-section" id="day4">
             <div class="day-header" onclick="toggleSection('day4-content', this)">
-                Day 4：6/9 (週二) 最終血拼與東京漫遊
+                🗓️ Day 4 ｜ 晨光依依：告別絕景，東京灣畔的優雅採買
                 <span class="toggle-icon">▲</span>
             </div>
-            
+
             <div class="day-content" id="day4-content">
                 <div class="card text-card">
                     <div class="card-content full-width" style="padding: 16px 24px;">
-                         <p class="card-desc"><strong>08:30 ｜ 退房出發</strong><br>告別富士山，帶著滿滿的回憶驅車前往東京灣區。</p>
+                        <p class="card-desc"><strong>08:30 ｜ 告別富士：退房出發</strong><br>帶著滿滿的相片與回憶，驅車迎向繁華的東京灣區。</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-img-wrapper">
-                        <img src="https://www.jrtimes.tw/upload/list/2bbeb9cc-38b1-4c9f-a4cc-ca00dfd880b3.jpg" alt="有明 Garden" class="card-img" loading="lazy">
+                        <img src="https://www.jrtimes.tw/upload/list/2bbeb9cc-38b1-4c9f-a4cc-ca00dfd880b3.jpg"
+                            alt="有明 Garden" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">10:30 - 14:15</div>
-                        <h2 class="card-title">景點與購物：有明 Garden (Ariake Garden)</h2>
+                        <h2 class="card-title">盡情探索：有明 Garden (Ariake Garden)</h2>
                         <div class="note">
                             <div class="note-header-wrap"><strong>一站式滿足：</strong></div>
-                            單一大型百貨建築，空間寬敞不擁擠。長輩可以逛大型 AEON 超市買伴手禮，思璇也能去「阿卡將」盡情採買嬰兒用品，全家人的需求一次搞定！
+                            在寬敞明亮的大型百貨內，長輩從容漫步 AEON 超市挑選伴手禮，思璇能在「阿卡將」盡情為小寶貝添購用品，全家人的願望一次達成。
                         </div>
                         <div class="note">
-                            <div class="note-header-wrap"><strong>輕鬆午餐：</strong></div>
-                            午餐直接在商場 5 樓美食街解決。選擇多樣且座位區極度寬敞，對推車非常友善，吃飯完全沒壓力。
+                            <div class="note-header-wrap"><strong>無壓午餐：</strong></div>
+                            5 樓美食街選擇多元，座位區極度寬廣，嬰兒推車進出毫無阻礙，享受毫無壓力的美味時光。
                         </div>
                     </div>
                 </div>
 
                 <div class="map-link-container">
-                    <a href="https://www.google.com/maps/dir/Fuji+Gran+Villa+-+TOKI+-/有明+Garden/東京國際郵輪碼頭/" target="_blank" class="map-btn">
+                    <a href="https://www.google.com/maps/dir/Fuji+Gran+Villa+-+TOKI+-/有明+Garden/東京國際郵輪碼頭/"
+                        target="_blank" class="map-btn">
                         <span>📍</span> 開啟 Day 4 行程導航地圖
                     </a>
-                    <iframe 
-                        class="map-iframe" 
-                        src="https://maps.google.com/maps?saddr=Fuji+Gran+Villa+-+TOKI+-&daddr=有明+Garden+to:東京國際郵輪碼頭&output=embed" 
-                        title="Day 4 導航地圖"
-                        allowfullscreen="" 
-                        loading="lazy">
+                    <iframe class="map-iframe"
+                        src="https://maps.google.com/maps?saddr=Fuji+Gran+Villa+-+TOKI+-&daddr=有明+Garden+to:東京國際郵輪碼頭&output=embed"
+                        title="Day 4 導航地圖" allowfullscreen="" loading="lazy">
                     </iframe>
                 </div>
             </div>
@@ -985,211 +1106,225 @@
 
         <!-- =============== 海上篇 (Day 4 - 8) =============== -->
         <hr style="border:0; height:1px; background:#CBD5E1; margin: 50px 0;">
-        
+
         <div style="text-align:center; margin-bottom: 40px;">
-             <h1 style="color:var(--cruise-color); margin-bottom:10px;">🌊 盛世啟航：MSC 榮耀號 頂級移航之旅</h1>
-             <p style="color:var(--text-muted); font-size:18px;">告別精采的日本陸地行程，我們將從橫濱港登上 17 萬噸的「MSC 地中海榮耀號」，展開連續四天的海上巡遊，直達台灣基隆港。沒有早起趕行程的壓力，只有無盡的湛藍海景、頂級美食與世界級大秀。</p>
+            <h1 style="color:var(--cruise-color); margin-bottom:10px;">🌊 湛藍盛世：MSC 榮耀號 頂級移航私旅</h1>
+            <p style="color:var(--text-muted); font-size:18px;">告別陸地的精采，我們將從橫濱港登上 17 萬噸的「MSC
+                地中海榮耀號」，展開連續四天的海上巡遊，直達台灣基隆港。<br>沒有早起趕行程的壓力，只有無盡的湛藍海景、頂級美食與世界級的視覺饗宴。</p>
         </div>
 
-        <!-- Day 4 -->
+        <!-- Day 4 Sea -->
         <div class="day-section cruise-theme" id="day5">
             <div class="day-header cruise-theme" onclick="toggleSection('day5-content', this)">
-                Day 4：6/9 (週二) 🚢 橫濱璀璨登船：啟動海上度假模式
+                📅 Day 4 (6/9) ｜ 🚢 橫濱璀璨登船：啟動海上度假模式
                 <span class="toggle-icon">▲</span>
             </div>
-            
+
             <div class="day-content" id="day5-content">
                 <div class="card cruise-theme">
                     <div class="card-img-wrapper">
                         <!-- 替換為郵輪登船照/外觀大氣照 -->
-                        <img src="https://i0.wp.com/senworldtravel.blog/wp-content/uploads/2025/05/msc-cruises-msc-bellissima-exterior-copyrights-msc-rights.jpg?fit=1200%2C799&ssl=1" alt="東京國際郵輪碼頭登船" class="card-img" loading="lazy">
+                        <img src="https://i0.wp.com/senworldtravel.blog/wp-content/uploads/2025/05/msc-cruises-msc-bellissima-exterior-copyrights-msc-rights.jpg?fit=1200%2C799&ssl=1"
+                            alt="東京國際郵輪碼頭登船" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">13:00 - 15:00</div>
-                        <h2 class="card-title">【關鍵時間】抵達東京國際郵輪碼頭登船</h2>
-                        <p class="card-desc">14:30 將豐碩的戰利品放上車，輕鬆前往碼頭。結束日本採買後，今天我們將以最優雅的姿態登上這座海上移動城堡。</p>
+                        <h2 class="card-title">【尊榮啟航】抵達東京國際郵輪碼頭登船</h2>
+                        <p class="card-desc">將戰利品交給行李托運，今天，我們將以最優雅的姿態登上這座移動城堡。</p>
                         <div class="note calm">
-                            <div class="note-header-wrap"><strong>達人帶路：</strong></div>
-                            抵達碼頭後，我們全體皆享有<strong>「鑽石會員優先登船」</strong>特權，可避開人潮快速通關。
+                            <div class="note-header-wrap"><strong>專屬管家視角：</strong></div>
+                            憑藉<strong>「鑽石會員」</strong>特權，我們將走優先通道，完美避開排隊人潮，從容通關。
                         </div>
                         <div class="note">
                             <div class="note-header-wrap"><strong>登船首要任務：</strong></div>
-                            踏上甲板的第一件事，請務必連上船上 Wi-Fi 並打開「MSC for Me App」，立刻將這幾天的「旋轉木馬劇院」大秀預約起來！
+                            踏上甲板，連上 Wi-Fi 打開「MSC for Me App」，優雅地將心儀的大秀預約妥當。
                         </div>
                     </div>
                 </div>
 
                 <div class="card cruise-theme">
                     <div class="card-img-wrapper">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKLvvDZG7HV4dyDxQ-uRPdgPU0rHDwLOgRKw&s" alt="榮耀大道" class="card-img" loading="lazy">
+                        <img src="https://msc-cruises.com.tw/images/bellissima/photo02.jpg" alt="榮耀大道" class="card-img"
+                            loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">16:00</div>
-                        <h2 class="card-title">榮耀大道與水晶樓梯初體驗</h2>
-                        <p class="card-desc">漫步於 96 米長的香榭大道，抬頭仰望絕美的 LED 天幕。別忘了到 12 道施華洛世奇水晶樓梯拍下第一張全家福。</p>
+                        <h2 class="card-title">璀璨初見：榮耀大道與水晶樓梯</h2>
+                        <p class="card-desc">漫步於 96 米長的香榭大道，抬頭仰望絕美的 LED 天幕。在 12 道施華洛世奇水晶樓梯前，留下這趟航程的第一張華麗合影。</p>
                     </div>
                 </div>
-                
+
                 <div class="card cruise-theme">
                     <div class="card-img-wrapper">
-                        <img src="https://s.yimg.com/ny/api/res/1.2/h7gN_JPVq4jJCpdTT7htFA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQ4MA--/https://s.yimg.com/os/creatr-uploaded-images/2025-12/a7bc9c90-d0fb-11f0-bbdb-8d3b7f620b75" alt="迎賓晚餐" class="card-img" loading="lazy">
+                        <img src="https://s.yimg.com/ny/api/res/1.2/h7gN_JPVq4jJCpdTT7htFA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQ4MA--/https://s.yimg.com/os/creatr-uploaded-images/2025-12/a7bc9c90-d0fb-11f0-bbdb-8d3b7f620b75"
+                            alt="迎賓晚餐" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">18:00</div>
-                        <h2 class="card-title">啟航派對與迎賓晚餐</h2>
-                        <p class="card-desc">今晚可先至主餐廳享用正式的西式三道佳餚，感受純正的地中海郵輪氛圍。</p>
+                        <h2 class="card-title">味蕾迎賓：啟航派對與正式晚餐</h2>
+                        <p class="card-desc">步入主餐廳享用正式的西式三道佳餚，在觥籌交錯間，感受純正地中海郵輪的微醺氛圍。</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Day 5 -->
+        <!-- Day 5 Sea -->
         <div class="day-section cruise-theme" id="day6">
             <div class="day-header cruise-theme" onclick="toggleSection('day6-content', this)">
-                Day 5：6/10 (週三) 🚢 航海日：極致放鬆與水療洗禮
+                📅 Day 5 (6/10) ｜ 🚢 航海日：極致放鬆與水療洗禮
                 <span class="toggle-icon">▲</span>
             </div>
-            
+
             <div class="day-content" id="day6-content">
                 <div class="card text-card cruise-theme">
-                     <div class="card-content full-width" style="padding: 16px 24px;">
-                         <p class="card-desc">第一天完整的海上航行，主軸是「徹底放鬆」。這正是移航行程最迷人的地方——沒有靠港時間的催促。</p>
-                     </div>
+                    <div class="card-content full-width" style="padding: 16px 24px;">
+                        <p class="card-desc">第一天完整的海上航行，主軸是「徹底放鬆」。這正是移航行程最迷人的地方——沒有靠港時間的催促。</p>
+                    </div>
                 </div>
                 <div class="card cruise-theme">
                     <div class="card-img-wrapper">
-                        <img src="https://today-obs.line-scdn.net/0hJl7rR6OzFUMKCwTjvY9qFDJdGTI5bQ9KKGtSLCsISiMiJ1tBMjhGICwMTW8vbwITKm1bJHwKHyclPFBCMg/w580" alt="悠閒晨光" class="card-img" loading="lazy">
+                        <img src="https://today-obs.line-scdn.net/0hJl7rR6OzFUMKCwTjvY9qFDJdGTI5bQ9KKGtSLCsISiMiJ1tBMjhGICwMTW8vbwITKm1bJHwKHyclPFBCMg/w580"
+                            alt="悠閒晨光" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">10:00</div>
-                        <h2 class="card-title">悠閒晨光與嬰幼兒放電</h2>
-                        <p class="card-desc">船上備有與 Chicco 合作的「嬰幼兒俱樂部」。長輩們可以在無邊際泳池畔享受海風，年輕人則可以帶寶寶去專屬空間體驗一下，或是回房享受靜謐時光。</p>
+                        <h2 class="card-title">悠閒晨光：海風與靜謐</h2>
+                        <p class="card-desc">長輩們在無邊際泳池畔享受蔚藍海風。帶著寶貝前往 Chicco 合作的「嬰幼兒俱樂部」探索，或是回到艙房，獨享一片不被打擾的湛藍。</p>
                     </div>
                 </div>
                 <div class="card cruise-theme">
                     <div class="card-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800&auto=format&fit=crop" alt="頂級水療" class="card-img" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800&auto=format&fit=crop"
+                            alt="頂級水療" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">14:00</div>
-                        <h2 class="card-title">MSC Aurea Spa 鑽石專屬水療體驗</h2>
+                        <h2 class="card-title">喚醒感官：MSC Aurea Spa 鑽石專屬水療</h2>
                         <div class="note calm">
-                            <div class="note-header-wrap"><strong>達人帶路：</strong></div>
-                            鑽石會員獨享的 <strong>1 小時免費熱能區（Thermal Area）體驗</strong> 。這裡有各式桑拿、冰雪室與水療池。由於同行有寶寶，建議大家可以「分批預約」，讓每個人都能毫無後顧之憂地享受這 60 分鐘的極致舒壓。
+                            <div class="note-header-wrap"><strong>專屬管家視角：</strong></div>
+                            利用鑽石會員獨享的 <strong>1 小時免費熱能區（Thermal
+                                Area）體驗</strong>。家人們分批預約，在各式桑拿與綿密氣泡的水療池中，徹底洗滌身心，將頻率切換至最完美的度假模式。
                         </div>
                     </div>
                 </div>
                 <div class="card cruise-theme">
                     <div class="card-img-wrapper">
-                        <img src="https://winnieexplorer.com/wp-content/uploads/2025/05/msc-bellissima%E4%BB%98%E8%B2%BB%E8%A8%AD%E6%96%BD-F1-%E6%A8%A1%E6%93%AC%E8%B3%BD%E8%BB%8A-e1746068578385-1024x495.jpg" alt="遊樂設施" class="card-img" loading="lazy">
+                        <img src="https://winnieexplorer.com/wp-content/uploads/2025/05/msc-bellissima%E4%BB%98%E8%B2%BB%E8%A8%AD%E6%96%BD-F1-%E6%A8%A1%E6%93%AC%E8%B3%BD%E8%BB%8A-e1746068578385-1024x495.jpg"
+                            alt="遊樂設施" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">午後彈性時光</div>
-                        <h2 class="card-title">娛樂設施與甲板漫步</h2>
-                        <p class="card-desc">大學同學若想尋求刺激，可前往挑戰 F1 模擬賽車、XD 互動影院，或是到亞利桑那水上樂園的戶外甲板享受陽光。</p>
+                        <h2 class="card-title">刺激與放鬆的交響</h2>
+                        <p class="card-desc">渴望活力的年輕人可前往挑戰 F1 模擬賽車、XD 互動影院，或在亞利桑那水上樂園的戶外甲板擁抱陽光。</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Day 6 -->
+        <!-- Day 6 Sea -->
         <div class="day-section cruise-theme" id="day7">
             <div class="day-header cruise-theme" onclick="toggleSection('day7-content', this)">
-                Day 6：6/11 (週四) 🚢 航海日：海上摘星與奢華饗宴
+                📅 Day 6 (6/11) ｜ 🚢 航海日：海上摘星與奢華饗宴
                 <span class="toggle-icon">▲</span>
             </div>
-            
+
             <div class="day-content" id="day7-content">
                 <div class="card text-card cruise-theme">
-                     <div class="card-content full-width" style="padding: 16px 24px;">
-                         <p class="card-desc">習慣了船上的節奏後，今天是盡情享受設施與美食的最佳時機。</p>
-                     </div>
+                    <div class="card-content full-width" style="padding: 16px 24px;">
+                        <p class="card-desc">習慣了船上的節奏後，今天是盡情享受設施與美食的最佳時機。</p>
+                    </div>
                 </div>
                 <div class="card cruise-theme">
                     <div class="card-img-wrapper">
-                        <img src="https://lh5.googleusercontent.com/proxy/kkiaM5Rt44M7D7YEJIWaaS6aUyQrhpva8YMayE8VaKI0tmo5zrve7mYUJaa225fzUaP5nZpHrW08MeD2wRebwdKyQbHVTicAHnJE5ks9uS7r7ULNrEa5ChyY" alt="免稅血拼" class="card-img" loading="lazy">
+                        <img src="https://lh5.googleusercontent.com/proxy/kkiaM5Rt44M7D7YEJIWaaS6aUyQrhpva8YMayE8VaKI0tmo5zrve7mYUJaa225fzUaP5nZpHrW08MeD2wRebwdKyQbHVTicAHnJE5ks9uS7r7ULNrEa5ChyY"
+                            alt="免稅血拼" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">全日自由探索</div>
-                        <h2 class="card-title">免稅血拼與室內派對</h2>
-                        <p class="card-desc">榮耀大道上的免稅店是最後補齊精品的絕佳地點。長輩可以參加船上的品酒教學或手工藝課程；下午時分，推薦到 6 樓的 HOLA! Tacos 吃個墨西哥小點心當作下午茶。</p>
+                        <h2 class="card-title">免稅血拼與午後微醺</h2>
+                        <p class="card-desc">榮耀大道上的免稅店是補齊精品的絕佳舞台。長輩參與品酒或手工藝課程；午後步入 6 樓的 HOLA! Tacos，以墨西哥精緻小點佐一杯悠閒的下午茶。
+                        </p>
                     </div>
                 </div>
-                
+
                 <div class="card cruise-theme">
                     <div class="card-img-wrapper">
                         <!-- 替換牛排館高質感照片 -->
-                        <img src="https://www.miragetour.com.tw/material-alias/MSC%E6%A6%AE%E8%80%80%E8%99%9F/%E7%BE%8E%E5%BC%8F%E7%89%9B%E6%8E%92%E5%B1%8B.jpg" alt="頂級牛排" class="card-img" loading="lazy">
+                        <img src="https://www.miragetour.com.tw/material-alias/MSC%E6%A6%AE%E8%80%80%E8%99%9F/%E7%BE%8E%E5%BC%8F%E7%89%9B%E6%8E%92%E5%B1%8B.jpg"
+                            alt="頂級牛排" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">18:30</div>
-                        <h2 class="card-title">Butcher's Cut 美式牛排館 尊榮晚宴</h2>
+                        <h2 class="card-title">尊榮晚宴：Butcher's Cut 美式牛排館</h2>
                         <div class="note calm">
-                            <div class="note-header-wrap"><strong>達人帶路：</strong></div>
-                            今晚是行程的重頭戲！利用鑽石會員的「免費一次特色餐廳」權益，我們將在 Butcher's Cut 享用頂級牛排套餐。這裡的熟成牛排肉汁飽滿、環境隱密優雅，絕對是這趟旅程中最具儀式感的一餐。
+                            <div class="note-header-wrap"><strong>專屬管家視角：</strong></div>
+                            行程的味覺巔峰！利用鑽石會員的「免費一次特色餐廳」權益，我們在隱密優雅的環境中，聽著刀尖劃開熟成牛排的聲音，品嚐豐盈肉汁，成就這趟旅程最具儀式感的一餐。
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="card cruise-theme">
                     <div class="card-img-wrapper">
-                        <img src="https://hips.hearstapps.com/hmg-prod/images/%E5%80%AB%E6%95%A6%E5%A4%A7%E5%8A%87%E9%99%A2-%E5%9C%96-msc%E5%9C%B0%E4%B8%AD%E6%B5%B7%E9%83%B5%E8%BC%AA-645499fd4647d.jpg" alt="倫敦大劇院" class="card-img" loading="lazy">
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/%E5%80%AB%E6%95%A6%E5%A4%A7%E5%8A%87%E9%99%A2-%E5%9C%96-msc%E5%9C%B0%E4%B8%AD%E6%B5%B7%E9%83%B5%E8%BC%AA-645499fd4647d.jpg"
+                            alt="倫敦大劇院" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">21:00</div>
-                        <h2 class="card-title">倫敦大劇院：世界級視覺饗宴</h2>
-                        <p class="card-desc">餐後前往劇院觀賞百老匯級別的免費歌舞秀，為華麗的一天畫下完美句點。</p>
+                        <h2 class="card-title">視覺盛宴：倫敦大劇院</h2>
+                        <p class="card-desc">餐後入座劇院，觀賞百老匯級別的華麗歌舞秀，為璀璨的一天畫下完美句點。</p>
                     </div>
                 </div>
             </div>
         </div>
-        
         <!-- Day 7 -->
         <div class="day-section cruise-theme" id="day8">
             <div class="day-header cruise-theme" onclick="toggleSection('day8-content', this)">
-                Day 7：6/12 (週五) 🚢 航海日：完美收尾與溫馨道別
+                📅 Day 7 (6/12) ｜ 🚢 航海日：完美收尾與溫馨道別
                 <span class="toggle-icon">▲</span>
             </div>
-            
+
             <div class="day-content" id="day8-content">
                 <div class="card text-card cruise-theme">
-                     <div class="card-content full-width" style="padding: 16px 24px;">
-                         <p class="card-desc">最後一個全天航海日，把握時間把還沒體驗到的設施玩過一遍！</p>
-                     </div>
+                    <div class="card-content full-width" style="padding: 16px 24px;">
+                        <p class="card-desc">最後一個全天航海日，以最慢的步調，把還沒體驗到的美好再溫習一遍。</p>
+                    </div>
                 </div>
                 <div class="card cruise-theme">
                     <div class="card-img-wrapper">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMyM0wayDR4kcMO-RLTY1s7psD57N3AIIwcw&s" alt="陽台早餐" class="card-img" loading="lazy">
+                        <img src="https://i0.wp.com/wanchen-travel.com/wp-content/uploads/2024/03/msc-open-air-theater-3.jpeg?resize=1024%2C768&ssl=1"
+                            alt="陽台早餐" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">日間自由活動</div>
                         <h2 class="card-title">海上慢享時光</h2>
-                        <p class="card-desc">可選擇在艙房陽台享受客房服務送來的早餐，看著湛藍太平洋放空。午後可以前往賭場試試手氣，或是在甲板躺椅上吹著海風，享受與家人朋友齊聚的悠哉時光。</p>
+                        <p class="card-desc">在艙房陽台，伴著太平洋的海浪聲享用客房早餐。午後前往賭場試試手氣，或在甲板躺椅上吹著海風，享受與家人齊聚的無價時光。</p>
                     </div>
                 </div>
-                
+
                 <div class="card cruise-theme">
                     <div class="card-img-wrapper">
                         <!-- 替換為施華洛世奇水晶群星閃耀風格 -->
-                        <img src="https://lh3.googleusercontent.com/proxy/fDQ-pYjinaNiLPjVNTyF18hJYzjhCILEKSL4CeoT2wTEP4fSxf9icEuFl7Y79wtpvD0akYCQ-iftkMSYzR48YNRl6zM2f3GQDaLcdVmS-d4HJZpFW2CW0Q8" alt="水晶階梯" class="card-img" loading="lazy">
+                        <img src="https://lh3.googleusercontent.com/proxy/fDQ-pYjinaNiLPjVNTyF18hJYzjhCILEKSL4CeoT2wTEP4fSxf9icEuFl7Y79wtpvD0akYCQ-iftkMSYzR48YNRl6zM2f3GQDaLcdVmS-d4HJZpFW2CW0Q8"
+                            alt="水晶階梯" class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">20:00</div>
-                        <h2 class="card-title">船長告別晚宴與最後巡禮</h2>
-                        <p class="card-desc">穿上您最滿意的服裝，參與熱鬧的義大利風情之夜。</p>
+                        <h2 class="card-title">華麗謝幕：船長告別晚宴</h2>
+                        <p class="card-desc">換上最滿意的服裝，沉浸在熱鬧的義大利風情之夜中。</p>
                     </div>
                 </div>
-                
+
                 <div class="card cruise-theme">
                     <div class="card-img-wrapper">
-                        <img src="https://cdn2.ettoday.net/images/821/d821409.jpg" alt="行李打包" class="card-img" loading="lazy">
+                        <img src="https://cdn2.ettoday.net/images/821/d821409.jpg" alt="行李打包" class="card-img"
+                            loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">22:00</div>
-                        <h2 class="card-title">【關鍵時間】行李打包與託運</h2>
+                        <h2 class="card-title">【關鍵時間】優雅打包</h2>
                         <div class="note calm">
-                            <div class="note-header-wrap"><strong>達人帶路：</strong></div>
-                            今晚就必須將大件行李打包好，掛上行李條並放在房門外。<strong>請務必預留一套明早下船要穿的衣服、貴重物品以及寶寶的隨身用品在手提包內！</strong>
+                            <div class="note-header-wrap"><strong>專屬管家視角：</strong></div>
+                            今晚將大件行李打包並掛上行李條置於房外。<strong>千萬別忘了：將明早下船的衣物、貴重物品與寶貝的隨身用品，安穩地留在手提包內！</strong>
                         </div>
                     </div>
                 </div>
@@ -1197,43 +1332,45 @@
         </div>
 
         <!-- Day 8 -->
-        <div class="day-section cruise-theme" id="day9">+
+        <div class="day-section cruise-theme" id="day9">
             <div class="day-header cruise-theme" onclick="toggleSection('day9-content', this)">
-                Day 8：6/13 (週六) 🚗 抵達基隆港：滿載美好回憶
+                📅 Day 8 (6/13) ｜ 🚗 溫柔賦歸：滿載無價回憶
                 <span class="toggle-icon">▲</span>
             </div>
-            
+
             <div class="day-content" id="day9-content">
                 <div class="card cruise-theme">
                     <div class="card-img-wrapper">
-                        <img src="https://img.ltn.com.tw/Upload/news/600/2024/12/11/4890784_1_1.jpg" alt="機場回程" class="card-img" loading="lazy">
+                        <img src="https://img.ltn.com.tw/Upload/news/600/2024/12/11/4890784_1_1.jpg" alt="機場回程"
+                            class="card-img" loading="lazy">
                     </div>
                     <div class="card-content">
                         <div class="time-badge">06:00</div>
-                        <h2 class="card-title">抵達基隆港</h2>
-                        <p class="card-desc">清晨，榮耀號將緩緩駛入基隆港。享用完最後一頓豐盛的自助早餐後，我們將利用鑽石會員的<strong>「優先下船」</strong>特權，從容不迫地通關，帶著滿滿的回憶與戰利品回到溫暖的家。</p>
+                        <h2 class="card-title">晨曦抵港：基隆港</h2>
+                        <p class="card-desc">清晨，榮耀號緩緩駛入熟悉的基隆港。享用完最後一頓豐盛早餐後，憑藉鑽石會員的<strong>「優先下船」</strong>特權，從容不迫地通關。</p>
                         <div class="note calm">
-                            <div class="note-header-wrap"><strong>陸地巡航視聽指南：</strong></div>
-                            針對 4 大 1 嬰兒以及滿載的戰利品，我們同樣安排 <strong>頂級 9 人座商務旗艦車（如 Alphard 規格或 T6.1）</strong> 。專屬的<strong>嬰兒反向安全座椅</strong>會全面消毒並提前安裝在最穩定的中排座位。車上備有充電線讓您分享美好時光！
+                            <div class="note-header-wrap"><strong>座艙級禮遇：</strong></div>
+                            針對滿載的戰利品與家人，我們已安排好<strong>頂級 9 人座商務旗艦車（如 Alphard 或
+                                T6.1）</strong>。專屬的<strong>嬰兒反向安全座椅</strong>已全面消毒並穩妥安裝，車廂內備有充電線，讓您隨時分享旅途美照。
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="card info-card">
-                     <div class="card-content full-width">
-                         <h2 class="card-title">🚗 接送與返程安排</h2>
-                         <ul>
-                             <li><strong>建議出發時間：</strong> 配合您大約 10:00 多來到陸地上，我們將安排 <strong>10:30 於基隆港客運中心上車</strong> 。司機會在 10:00 提前於周邊停車場待命，等您提領完行李後，一通電話我們就開到大門口為您上行李。</li>
-                             <li><strong>預定行駛路線：</strong> 從基隆港出發，優先銜接<strong>國道三號（北二高）</strong>一路南下，避開北部都會區的平面車流，中南部路段再視情況切換回國道一號，依序將家人平穩送達潭子與豐原溫暖的家。</li>
-                             <li><strong>預防性塞車方案：</strong> 早上 10 點多基隆市區容易有郵輪離港的接駁車潮，司機會靈活避開市區壅塞路段。若遇國道新竹或苗栗路段壅塞，會機動改走台 61 線西濱快速道路。</li>
-                             <li><strong>休息站停靠亮點：</strong> 若途中需要幫小寶貝換尿布、泡奶，或是大人想喝杯咖啡，我們會挑選設施完善的「湖口服務區」或「西湖服務區」稍作停留。</li>
-                         </ul>
-                         <div class="note">
-                             <div class="note-header-wrap"><strong>職人提醒 (下船報關)：</strong></div>
-                             雖然是搭郵輪，但購買日本伴手禮、藥妝與免稅品，依然要留意海關的免稅額度喔！遺失物雙重確認：離開客房前，記得再翻一下抽屜跟保險箱！
-                         </div>
-                     </div>
-                 </div>
+                    <div class="card-content full-width">
+                        <h2 class="card-title">🚗 專屬接送與返程安排</h2>
+                        <ul>
+                            <li><strong>10:30 尊榮接駁：</strong>待您大約 10:00 抵達陸地，提領完行李後，一通電話，專車即刻駛至大門口為您扛起行李重擔，您只需優雅上車。</li>
+                            <li><strong>平穩歸途：</strong>優先駛上國道三號避開擁擠車潮。在最平穩的駕駛技術下，小寶貝能安穩熟睡。依序將家人平安送達潭子與豐原溫暖的家。</li>
+                            <li><strong>機動應變：</strong>若遇基隆市區郵輪接駁車潮或國道壅塞，司機會以專業經驗靈活切換台 61
+                                線西濱快速道路；中途若需幫小寶貝換尿布或稍作休憩，將停靠設施最完善的湖口或西湖服務區。</li>
+                        </ul>
+                        <div class="note">
+                            <div class="note-header-wrap"><strong>💡 專屬管家視角 (下船報關)：</strong></div>
+                            雖然是搭郵輪，但購買的日本伴手禮與免稅品，依然要留意海關的免稅額度。離開客房前，記得優雅地再巡視一次抽屜與保險箱，將所有美好完整帶回家！
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -1250,7 +1387,7 @@
     <!-- 互動功能腳本 -->
     <script>
         // 監聽滾動，顯示/隱藏回到頂部按鈕，並標記導航列活躍狀態
-        window.onscroll = function() {
+        window.onscroll = function () {
             var btn = document.getElementById("backToTop");
             if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
                 btn.style.display = "block";
@@ -1269,19 +1406,19 @@
                     links.forEach(link => {
                         link.classList.remove('active');
                         link.classList.remove('active-cruise');
-                        if(section.getAttribute('id') === link.getAttribute('href').substring(1)) {
-                            if(section.classList.contains('cruise-theme')){
+                        if (section.getAttribute('id') === link.getAttribute('href').substring(1)) {
+                            if (section.classList.contains('cruise-theme')) {
                                 link.classList.add('active-cruise');
                             } else {
                                 link.classList.add('active');
                             }
-                            
+
                             // 讓導覽列自動滾動到可見區域 (特別是手機版)
                             let nav = document.getElementById('mainNav');
                             let linkRect = link.getBoundingClientRect();
                             let navRect = nav.getBoundingClientRect();
-                            if(linkRect.left < navRect.left || linkRect.right > navRect.right) {
-                                nav.scrollLeft = link.offsetLeft - nav.offsetWidth/2 + link.offsetWidth/2;
+                            if (linkRect.left < navRect.left || linkRect.right > navRect.right) {
+                                nav.scrollLeft = link.offsetLeft - nav.offsetWidth / 2 + link.offsetWidth / 2;
                             }
                         }
                     });
@@ -1305,4 +1442,5 @@
         }
     </script>
 </body>
+
 </html>
