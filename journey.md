@@ -1,4 +1,4 @@
-﻿# 🌟 御用私房・尊爵啟航｜富士山絕景與 MSC 榮耀號 高訂私旅
+# 🌟 御用私房・尊爵啟航｜富士山絕景與 MSC 榮耀號 高訂私旅
 
 > 「真正的奢華，是讓每一位家人都擁有從容的微笑。
 > 我們為六個月大的寶貝預留了安睡的空間，為長輩打點了無需排隊的極上盛宴。
@@ -27,22 +27,34 @@
 
 ### 🗓️ Day 1 ｜ 暮色迎賓：御用座駕直達富士山麓，私享極上和牛壽喜燒
 
+![星宇降落](https://rainieis.tw/wp-content/uploads/54408495_813907485642550_314107030124101632_n.jpg)
+
 - **15:05 - 16:15 ｜ 【專屬禮遇】星宇降落與尊榮極速通關**
   - **星宇迎賓**：星宇航空 JX802 航班於 15:05 劃破天際，平穩降落成田機場。您與家人即將踏上這趟精心籌備的完美旅途。
   - **專屬管家視角**：在成田機場大廳，我們已為您備妥溫暖的笑容相迎。懷抱著 6 個月大的小寶貝，我們將引導您優先使用「愛心禮遇通道」無縫通關。請將繁重的行李託付給我們，您只需牽著思璇與長輩的手，帶著輕鬆的笑容，以最從容的姿態揭開假期的序幕。
 
+![超商採買](https://images.unsplash.com/photo-1553621042-f6e147245754?q=80&w=800&auto=format&fit=crop)
+
 - **16:15 - 16:30 ｜ 【餘裕時刻】機場選品與精緻採買**
   - **完美動線**：為了將最珍貴的時光保留給富士山，我們將這 15 分鐘化為最高效的選品時刻。無須在機場餐廳與人潮推擠，由兩位家人以最俐落的步伐前往 Lawson 或 7-11，為思璇挑選今晚佐茶的精緻甜點、長輩喜愛的解饞小點，以及明日的晨間輕食。將這些充滿期待的美味提上專車，成為路途中的小確幸。
+
+![旗艦座艙直達 Fuji Gran Villa](<https://bossguest.com/submainPic/175199341112333%20(1).jpg>)
 
 - **16:30 - 18:50 ｜ 【無縫接軌】旗艦座艙直達 Fuji Gran Villa**
   - **五感體驗**：安坐於頂規商務車的真皮座椅中，車廂內的恆溫與靜謐，讓小寶貝與長輩能在平穩的節奏裡安心沉睡。窗外景致隨著光影流轉，由繁華的東京高樓，悄然退換成鬱鬱蔥蔥的山林。當您輕揉雙眼，暮色中的壯麗富士山與極具質感的 Villa 已靜靜佇立眼前。
   - **專屬管家視角**：為確保在 19:00 前優雅下榻，職人司機會憑藉深厚的經驗，為您精準導航最順暢的高速路段直達山麓。為求效率，沿途不作繁雜的餐食停留，但只要家人輕聲吩咐，專車將隨時平穩停靠於設施完善且乾淨的 SA/PA 休息站，讓您舒展筋骨，一切以家人的舒適度為最高信仰。
 
+![優雅下榻](https://www.japanholiday.net/wp-content/uploads/2024/03/fuji-gran-villa-toki2.jpg)
+
 - **18:50 - 19:00 ｜ 【尊榮抵達】優雅下榻，私屬領地**
   - **完美達標**：在夜幕低垂的 19:00 前，專車分秒不差地駛入別墅區。管家已為您打點好一切 Check-in 手續，您只需輕盈轉身，將沉重的行李留在身後，準備投入富士山溫柔的放鬆之夜。
 
+![專屬壽喜燒](https://fujigran.toki223.com/cms/wp-content/themes/fuji/img/food/option_img8.jpg?250805)
+
 - **19:30 - ｜ 【極上盛宴】Villa 隱密私享，頂級和牛壽喜燒**
   - **五感體驗**：褪去一日的舟車勞頓，今晚，我們拒絕在夜風中尋覓餐館的奔波。當您與家人換上最舒適的居家輕裝步入客廳，映入眼簾的是已為您備妥、熱氣騰騰的頂級壽喜燒。頂級和牛細緻的油花在日式醬汁中輕吟綻放，撲鼻的脂香交織著全家人的歡聲笑語，這是專屬於您家族，最極致奢華的接風洗塵。
+
+🗺️ [開啟 Day 1 行程導航地圖](https://www.google.com/maps/dir/成田國際機場/Fuji+Gran+Villa+-+TOKI+-/)
 
 ---
 
@@ -50,21 +62,29 @@
 
 - **09:30 ｜ 悠閒出發：晨光甦醒**
   - **感官體驗**：從別墅睡飽自然醒，大口呼吸富士山早晨的清新空氣，沒有晨喚的催促，只有假期的從容。
+    ![本町二丁目商店街](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSctuqutOzb5nwOMkwTyHgu9QpRHYKbhFGv3A&s)
 - **09:40 - 10:00 ｜ 📸 昭和光影：ほんちょう２丁目商店街 (本町二丁目)**
   - **完美動線**：前往神社前順路停靠！復古街道的盡頭矗立著巨大的富士山，視覺震撼力極強。下車輕鬆散步 15 分鐘，隨手一按都是宛如電影海報的家族大片。
+    ![神社](https://static.gltjp.com/glt/data/directory/16000/15585/20240321_085130_8a8c6df4_w1920.webp)
 - **10:00 - 11:30 ｜ 沐浴芬多精：北口本宮富士淺間神社**
   - **五感體驗**：推著嬰兒車，漫步在平緩的無障礙參道上。巨木參天，微風拂過，全家人在這裡吸收滿滿的芬多精，雙手合十，祈求歲月靜好、旅途平安。
+    ![炸豬排](https://www.porta-y.jp/wp-content/uploads/2024/10/tonkatsu-genroku-241016-3.jpg)
 - **11:35 - 13:10 ｜ 酥脆誘惑：とんかつ 元祿（在地極品炸豬排）**
   - **完美動線**：逛完神社上車，短短 2 分鐘即可入座老店，完美避開正午人潮。
   - **五感體驗**：咬下外酥內嫩的極品炸豬排，喀滋聲中是傳承多年的職人火候，軟嫩肉質讓長輩也能輕鬆大快朵頤！寬敞的榻榻米區讓全家能大口扒著白飯，感受最純粹的滿足。
+    ![忍野八海](https://static.gltjp.com/glt/data/directory/12000/11258/20201026_053312_589e6620_w1920.webp)
 - **13:40 - 15:00 ｜ 澄澈藍寶石：忍野八海**
   - **感官體驗**：富士山的雪水經過層層過濾湧出，水池清澈見底。
   - **專屬管家視角**：此處遊客熙攘，建議將嬰兒推車留在專車上，用溫暖的背巾揹著小寶貝漫步，享受極高的機動性與貼身的安全感。
+    ![平野之濱](https://sliptojapan.com/wp-content/uploads/2025/04/fujisan-kawaguchiko-spot_%E5%B1%B1%E4%B8%AD%E6%B9%96%E5%B9%B3%E9%87%8E%E3%81%AE%E6%B5%9C-AC.jpeg)
 - **15:20 - 16:30 ｜ 私房絕景：山中湖 平野之濱**
   - **五感體驗**：轉往人煙稀少的私房秘境。讓小寶貝看著湖畔優雅的白天鵝，幸運的話，將天鵝與巨大富士山同框，拍下毫無干擾的夢幻全家福。湖畔微風輕拂，記得為家人披上一件防風外套。
+    ![購物與晚餐](https://images.unsplash.com/photo-1578916171728-46686eac8d58?q=80&w=800&auto=format&fit=crop)
 - **17:00 - 19:00 ｜ 滿載而歸：BELL 購物中心 / Gusto 家庭餐廳**
   - **一站式滿足**：順路返回市區，長輩與思璇可優雅漫步於商場超市與藥妝店，先行採買這幾天在 Villa 共享的零嘴或部分伴手禮。
   - **輕鬆晚宴**：在空間寬敞、對推車極度友善的 Gusto 家庭餐廳，用平板無壓力點餐。19:15 帶著豐碩的戰利品回到 Villa，享受靜謐的富士山夜色，為明日的河口湖環湖之旅儲備滿滿能量。
+
+🗺️ [開啟 Day 2 行程導航地圖](https://www.google.com/maps/dir/Fuji+Grand+Villa+-+Toki,+2855-1+Arakura,+Fujiyoshida,+Yamanashi+403-0011%E6%97%A5%E6%9C%AC/Honcho+2-chome+Shopping+District,+2+Chome-6+Shimoyoshida,+Fujiyoshida,+Yamanashi+403-0004%E6%97%A5%E6%9C%AC/%E5%8C%97%E5%8F%A3%E6%9C%AC%E5%AE%AE%E5%AF%8C%E5%A3%AB%E6%B7%BA%E9%96%93%E7%A5%9E%E7%A4%BE+%E6%97%A5%E6%9C%AC%E3%80%92403-0005+Yamanashi,+Fujiyoshida,+Kamiyoshida,+5558/%E5%85%83%E7%A5%BF+%E6%97%A5%E5%BC%8F%E7%82%B8%E8%B1%AC%E6%8E%92%E7%89%9B%E6%8E%92+%E6%97%A5%E6%9C%AC%E3%80%92403-0005+Yamanashi,+Fujiyoshida,+Kamiyoshida,+7+Chome%E2%88%923%E2%88%922/%E5%BF%8D%E9%87%8E%E5%85%AB%E6%B5%B7+%E6%97%A5%E6%9C%AC%E3%80%92401-0511+Yamanashi,+Minamitsuru+District,+Oshino,+Shibokusa/%E5%B9%B3%E9%87%8E%E4%B9%8B%E6%BF%B1+%E6%97%A5%E6%9C%AC%E3%80%92401-0502+Yamanashi,+Minamitsuru+District,+Yamanakako,+Hirano,+13/Kawaguchiko+Shopping+Center+BELL,+2986+Funatsu,+Fujikawaguchiko,+Minamitsuru+District,+Yamanashi+401-0301%E6%97%A5%E6%9C%AC/Fuji+Grand+Villa+-+Toki,+2855-1+Arakura,+Fujiyoshida,+Yamanashi+403-0011%E6%97%A5%E6%9C%AC/@35.4571226,138.7915649,13z/data=!3m1!5s0x601960867bfb72e1:0xc23f598143f154a8!4m50!4m49!1m5!1m1!1s0x601961a3f7b29a03:0x12722641fcadcda5!2m2!1d138.7751199!2d35.4895702!1m5!1m1!1s0x601967004c5219d1:0x5e58c75ce320b621!2m2!1d138.8038045!2d35.4926106!1m5!1m1!1s0x60196129b1baaaab:0x351d81311ed09dfe!2m2!1d138.7922637!2d35.470696!1m5!1m1!1s0x601960d58d48743b:0x6d62476c6f4c3d21!2m2!1d138.7959515!2d35.4742438!1m5!1m1!1s0x601966859f99842b:0x163aa46bb0af9f71!2m2!1d138.8324741!2d35.4600675!1m5!1m1!1s0x60196fec8ed01c37:0xaea15f41d50a234a!2m2!1d138.9008237!2d35.4247002!1m5!1m1!1s0x6019608678979297:0x4aa43d805feed8bc!2m2!1d138.7641792!2d35.4899091!1m5!1m1!1s0x601961a3f7b29a03:0x12722641fcadcda5!2m2!1d138.7751199!2d35.4895702!3e0?hl=zh-TW&entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D)
 
 ---
 
@@ -72,26 +92,37 @@
 
 - **08:30 ｜ 從容啟程：晨光與微風**
   - **專屬管家視角**：相較昨日稍微提早出發，我們將搶佔河口湖最清幽的早晨時光，完美避開週末的觀光人潮，享受屬於家族的寧靜。
+    ![富士山景觀纜車](https://www.settour.com.tw/ss_img/info/location/YMN/N0/YMN0000025/YMN0000025_41769.jpg)
 - **08:45 - 10:15 ｜ 絕景盡收：富士山景觀纜車**
   - **五感體驗**：趁著剛營業的通透空氣，我們躍上高空。此時的光線最為純粹，是拍下全家福大片的魔幻時刻。
   - **專屬管家視角**：因纜車動線考量，建議將嬰兒推車暫時換成揹巾，將小寶貝溫暖地擁在懷中，機動性更高。
+    ![FUJIYAMA COOKIE](https://www.fujiyamacookie.jp/product/a6808900000001ge-img/DSC03529.jpg)
 - **10:15 - 10:25 ｜ 伴手禮採買：FUJIYAMA COOKIE**
   - **完美動線**：漫步下山，剛好迎上店鋪大門敞開。花 10 分鐘挑選那散發著嚴選奶油香氣的富士山造型餅乾，將美好的心意提上車。
+    ![天晴號遊覽船](https://static.gltjp.com/glt/data/directory/13000/12079/20210826_141254_3028f3a9_w1920.webp)
 - **10:30 - 11:00 ｜ 水色巡禮：天晴號遊覽船 (機動彈性)**
   - **五感體驗**：在對面碼頭登船，微風徐徐，波光粼粼。為行程保留最高彈性，若提早結束便悠然前往下一站。
+    ![富士山吐司](https://s.yimg.com/ny/api/res/1.2/LpJhlgUTo5j9k8500oE.Ow--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTgwMA--/https://media.zenfs.com/en/homita_556/409873cec4793ffea7f178fbbde6d120)
 - **11:05 - 11:20 ｜ 私房香氣：食パン専門店 FUJISAN SHOKUPAN**
   - **完美動線**：精準踩點開店時刻！派代表將思璇心心念念、藍白相間的「富士山夢幻吐司」買齊，車廂內瞬間滿溢著幸福的碳水香氣。
+    ![ほうとう不動](https://img.bigfang.tw/2025/04/1744638082-4efdd2f969559e8b1c92e99f32ded48e.jpg)
 - **11:30 - 13:30 ｜ 暖胃首選：ほうとう不動 河口湖北本店**
   - **五感體驗**：提早入座，免去排隊之苦。在寬敞的傳統木造榻榻米上，大人們脫鞋徹底舒展雙腿，小寶貝也能在安全的軟墊上自在翻滾。全家共享一鍋熱呼呼的蔬菜餺飥麵，暖胃更暖心。
+    ![河口湖音樂盒之森美術館](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLzBzuLgWgTe-RLGwflWHdgo-Nn0HK5RSxEw&s)
 - **13:45 - 15:15 ｜ 歐洲風情：河口湖音樂盒之森美術館**
   - **感官體驗**：餐後的完美散策。推著嬰兒車在平緩的無障礙步道上漫步，充滿歐洲風情的庭園建築交織著優雅的音樂盒旋律，步調不自覺地慢了下來。
+    ![大石公園](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0l8fBKQUXioi-MtVPjik3UpAuGpHlXJPgcQ&s)
 - **15:25 - 16:25 ｜ 花海漫步：大石公園**
   - **五感體驗**：漫步湖畔自然花海，以真正的壯麗富士為背景，拿出早晨買的富士山吐司，拍下極具巧思且充滿歡笑的家族打卡照。
+    ![Lawson 河口湖役場前店](https://media.nownews.com/nn_media/thumbnail/2022/06/1655168938906-e71d9deea0ef418d8cf0d10b13f3d696-800x532.jpg)
 - **16:40 - 17:00 ｜ 餘暉獨享：Lawson 河口湖役場前店 (機動插入點)**
   - **專屬管家視角**：將網紅打卡點移至午後！此時光線柔和，且該店腹地寬廣，商務車停妥後，推著嬰兒車也能安全從容地拍出絕美照片，完全無需與人推擠。
+    ![和牛燒肉](https://s3.ap-northeast-1.amazonaws.com/hpr.ravenhp.com/2b9eec7c0b1/images/be7c7ccf392c6a94843743770257489c0a5c7753)
 - **17:00 - 18:30 ｜ 極致和牛盛宴：富士の食事處 白米 與優雅返程**
   - **五感體驗**：17:00 準時入座極具傳統日式風情的「富士の食事處 白米」。看著窗外雅緻的日式庭園景觀，品嚐入口即化的 A5 等級甲州和牛（無論是濃郁的壽喜燒或香氣四溢的富士山熔岩烤），搭配頂級越光米。長輩能在沉穩優雅的空間內，愜意享受這頓精緻奢華的在地饗宴。
   - **專屬管家視角**：在味蕾獲得極致滿足後，乘車輕鬆返回 Villa。今晚可在熱水中徹底舒展身心，並從容地整理行囊，帶著對陸地絕景與甲州美食的不捨與滿足，期待明日告別富士山，迎向東京灣畔的豪華郵輪嶄新航程。
+
+🗺️ [開啟 Day 3 行程未導航地圖](<https://www.google.com/maps/dir/Fuji+Grand+Villa+-+Toki,+2855-1+Arakura,+Fujiyoshida,+Yamanashi+403-0011%E6%97%A5%E6%9C%AC/%E6%B2%B3%E5%8F%A3%E6%B9%96+%E5%AF%8C%E5%A3%AB%E5%B1%B1%E7%BA%9C%E8%BB%8A+%E6%97%A5%E6%9C%AC%E3%80%92401-0303+Yamanashi,+Minamitsuru+District,+Fujikawaguchiko,+Azagawa,+1163-1/FUJIYAMA+COOKIE+%E6%97%A5%E6%9C%AC%E3%80%92401-0303+Yamanashi,+Minamitsuru+District,+Fujikawaguchiko,+Azagawa,+1165-1/%E6%B2%B3%E5%8F%A3%E6%B9%96%E9%81%8A%E8%A6%BD%E8%88%B9+%E5%A4%A9%E6%99%B4+%E6%97%A5%E6%9C%AC%E3%80%92401-0301+Yamanashi,+Minamitsuru+District,+Fujikawaguchiko,+Funatsu,+4034/Fujisan+Shokupan,+3462-11+Funatsu,+Fujikawaguchiko,+Minamitsuru+District,+Yamanashi+401-0301%E6%97%A5%E6%9C%AC/%E3%81%BB%E3%81%86%E3%81%A8%E3%81%86+(%E9%A4%BA%E9%A3%A5)+%E4%B8%8D%E5%8B%95+%E6%B2%B3%E5%8F%A3%E6%B9%96%E5%8C%97%E6%9C%AC%E5%BA%97+%E6%97%A5%E6%9C%AC%E3%80%92401-0304+Yamanashi,+Minamitsuru+District,+Fujikawaguchiko,+Kawaguchi,+707/%E6%B2%B3%E5%8F%A3%E6%B9%96+%E9%9F%B3%E6%A8%82%E6%A3%AE%E6%9E%97%E7%BE%8E%E8%A1%93%E9%A4%A8+%E6%97%A5%E6%9C%AC%E3%80%92401-0304+Yamanashi,+Minamitsuru+District,+Fujikawaguchiko,+Kawaguchi,+3077-20/%E5%A4%A7%E7%9F%B3%E5%85%AC%E5%9C%92+%E6%97%A5%E6%9C%AC%E3%80%92401-0305+Yamanashi,+Minamitsuru+District,+Fujikawaguchiko,+Oishi,+%EF%BC%92%EF%BC%95%EF%BC%92%EF%BC%95%E7%95%AA%E5%9C%B0%E3%81%AE%EF%BC%91%EF%BC%91%E5%85%88/%E7%BE%85%E6%A3%AE%E4%BE%BF%E5%88%A9%E5%95%86%E5%BA%97+%E5%AF%8C%E5%A3%AB%E6%B2%B3%E5%8F%A3%E6%B9%96%E7%94%BA%E5%85%AC%E6%89%80%E5%89%8D%E5%BA%97+%E6%97%A5%E6%9C%AC%E3%80%92401-0301+Yamanashi,+Minamitsuru+District,+Fujikawaguchiko,+Funatsu,+1395-1/Classic+Japanese+Restaurant+HAKUMAI,+%E6%97%A5%E6%9C%AC%E3%80%92403-0031+Yamanashi,+Fujiyoshida,+Asama,+2-chome%E2%88%922%E2%88%925+%E3%80%90%E5%AF%8C%E5%A3%AB%E5%90%89%E7%94%B0%E5%B8%82%E3%83%BB%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%83%BB%E5%92%8C%E9%A3%9F%E3%80%91/@35.5033359,138.7516203,14z/data=!4m62!4m61!1m5!1m1!1s0x601961a3f7b29a03:0x12722641fcadcda5!2m2!1d138.7751199!2d35.4895702!1m5!1m1!1s0x60195e268ba95555:0x4fa724d1d92f7142!2m2!1d138.7720895!2d35.5040321!1m5!1m1!1s0x60195e267d295555:0x5abdfc5fa23d89b0!2m2!1d138.7716668!2d35.5043145!1m5!1m1!1s0x60195e261295efe3:0x1dec70d1d1d2f871!2m2!1d138.7705446!2d35.5037283!1m5!1m1!1s0x60195f06da758745:0x9df03613887026a2!2m2!1d138.76518!2d35.4988872!1m5!1m1!1s0x60195e46cea28b6f:0xcdc11d4beec44cd9!2m2!1d138.7737268!2d35.5226981!1m5!1m1!1s0x60195e4f455690bf:0xcc5aa17825df4a75!2m2!1d138.768715!2d35.5224188!1m5!1m1!1s0x60195fa68c0b2b95:0xa22e530b3a652904!2m2!1d138.7457522!2d35.522904!1m5!1m1!1s0x60195fd47880d94f:0x149fb49a1e12905f!2m2!1d138.7563694!2d35.4985286!1m5!1m1!1s0x6019612d0d1edd09:0xf522b86422f0cc5f!2m2!1d138.7992176!2d35.4984536!3e0?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D>)
 
 ---
 
@@ -99,10 +130,13 @@
 
 - **08:30 ｜ 告別富士：退房出發**
   - 帶著滿滿的相片與回憶，驅車迎向繁華的東京灣區。
+    ![璀璨台場](https://img.mimihan.tw/uploads/20191127144607_94.jpg)
 - **10:30 - 14:15 ｜ 盡情探索：璀璨台場 (Odaiba) 綜合商圈**
   - **一站式滿足**：抵達擁有無敵海景的台場商圈！長輩可優雅漫步於 AQUA CiTY 或 DiverCity 挑選伴手禮，並與知名的獨角獸鋼彈合影；思璇則能直奔 AQUA CiTY 內的「玩具反斗城 & 寶寶反斗城 (Toys"R"Us / Babies"R"Us)」大型店，盡情為小寶貝添購各式衣物與用品，全家人的願望一次達成。
   - **無壓午餐**：台場各大商場內美食選擇極為豐富，無論是坐擁東京灣彩虹大橋絕景的景觀餐廳，或是寬敞平坦的美食街，嬰兒推車進出皆毫無阻礙。飽餐後還能推著寶貝在海濱公園吹吹海風，享受毫無壓力的美好時光。
   - **專屬管家視角**：台場距離稍後要登船的「東京國際郵輪碼頭」車程僅需 5 到 10 分鐘！這意味著我們能將逛街與採買的悠閒時光拉到最滿，完全不必擔心塞車或趕不上郵輪報到，是最完美的登船前哨站。
+
+🗺️ [開啟 Day 4 行程導航地圖](https://www.google.com/maps/dir/Fuji+Gran+Villa+-+TOKI+-/台場/東京國際郵輪碼頭/)
 
 ---
 
@@ -114,12 +148,16 @@
 
 ## 📅 Day 4 (6/9) ｜ 🚢 橫濱璀璨登船：啟動海上度假模式
 
+![東京國際郵輪碼頭登船](https://i0.wp.com/senworldtravel.blog/wp-content/uploads/2025/05/msc-cruises-msc-bellissima-exterior-copyrights-msc-rights.jpg?fit=1200%2C799&ssl=1)
+
 - **13:00 - 15:00 ｜ 【尊榮啟航】抵達東京國際郵輪碼頭登船**
   - 將戰利品交給行李托運，今天，我們將以最優雅的姿態登上這座移動城堡。
   - **專屬管家視角**：憑藉**「鑽石會員」**特權，我們將走優先通道，完美避開排隊人潮，從容通關。
   - **登船首要任務**：踏上甲板，連上 Wi-Fi 打開「MSC for Me App」，優雅地將心儀的大秀預約妥當。
+    ![榮耀大道](https://msc-cruises.com.tw/images/bellissima/photo02.jpg)
 - **16:00 ｜ 璀璨初見：榮耀大道與水晶樓梯**
   - 漫步於 96 米長的香榭大道，抬頭仰望絕美的 LED 天幕。在 12 道施華洛世奇水晶樓梯前，留下這趟航程的第一張華麗合影。
+    ![迎賓晚餐](https://s.yimg.com/ny/api/res/1.2/h7gN_JPVq4jJCpdTT7htFA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQ4MA--/https://s.yimg.com/os/creatr-uploaded-images/2025-12/a7bc9c90-d0fb-11f0-bbdb-8d3b7f620b75)
 - **18:00 ｜ 味蕾迎賓：啟航派對與正式晚餐**
   - 步入主餐廳享用正式的西式三道佳餚，在觥籌交錯間，感受純正地中海郵輪的微醺氛圍。
 
@@ -129,10 +167,14 @@
 
 第一天完整的海上航行，主軸是「徹底放鬆」。這正是移航行程最迷人的地方——沒有靠港時間的催促。
 
+![悠閒晨光](https://today-obs.line-scdn.net/0hJl7rR6OzFUMKCwTjvY9qFDJdGTI5bQ9KKGtSLCsISiMiJ1tBMjhGICwMTW8vbwITKm1bJHwKHyclPFBCMg/w580)
+
 - **10:00 ｜ 悠閒晨光：海風與靜謐**
   - 長輩們在無邊際泳池畔享受蔚藍海風。帶著寶貝前往 Chicco 合作的「嬰幼兒俱樂部」探索，或是回到艙房，獨享一片不被打擾的湛藍。
+    ![頂級水療](https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800&auto=format&fit=crop)
 - **14:00 ｜ 喚醒感官：MSC Aurea Spa 鑽石專屬水療**
   - **專屬管家視角**：利用鑽石會員獨享的 **1 小時免費熱能區（Thermal Area）體驗**。家人們分批預約，在各式桑拿與綿密氣泡的水療池中，徹底洗滌身心，將頻率切換至最完美的度假模式。
+    ![遊樂設施](https://winnieexplorer.com/wp-content/uploads/2025/05/msc-bellissima%E4%BB%98%E8%B2%BB%E8%A8%AD%E6%96%BD-F1-%E6%A8%A1%E6%93%AC%E8%B3%BD%E8%BB%8A-e1746068578385-1024x495.jpg)
 - **午後彈性時光 ｜ 刺激與放鬆的交響**
   - 渴望活力的年輕人可前往挑戰 F1 模擬賽車、XD 互動影院，或在亞利桑那水上樂園的戶外甲板擁抱陽光。
 
@@ -142,10 +184,14 @@
 
 習慣了船上的節奏後，今天是盡情享受設施與美食的最佳時機。
 
+![免稅血拼](https://lh5.googleusercontent.com/proxy/kkiaM5Rt44M7D7YEJIWaaS6aUyQrhpva8YMayE8VaKI0tmo5zrve7mYUJaa225fzUaP5nZpHrW08MeD2wRebwdKyQbHVTicAHnJE5ks9uS7r7ULNrEa5ChyY)
+
 - **全日自由探索 ｜ 免稅血拼與午後微醺**
   - 榮耀大道上的免稅店是補齊精品的絕佳舞台。長輩參與品酒或手工藝課程；午後步入 6 樓的 HOLA! Tacos，以墨西哥精緻小點佐一杯悠閒的下午茶。
+    ![頂級牛排](https://www.miragetour.com.tw/material-alias/MSC%E6%A6%AE%E8%80%80%E8%99%9F/%E7%BE%8E%E5%BC%8F%E7%89%9B%E6%8E%92%E5%B1%8B.jpg)
 - **18:30 ｜ 尊榮晚宴：Butcher's Cut 美式牛排館**
   - **專屬管家視角**：行程的味覺巔峰！利用鑽石會員的「免費一次特色餐廳」權益，我們在隱密優雅的環境中，聽著刀尖劃開熟成牛排的聲音，品嚐豐盈肉汁，成就這趟旅程最具儀式感的一餐。
+    ![倫敦大劇院](https://hips.hearstapps.com/hmg-prod/images/%E5%80%AB%E6%95%A6%E5%A4%A7%E5%8A%87%E9%99%A2-%E5%9C%96-msc%E5%9C%B0%E4%B8%AD%E6%B5%B7%E9%83%B5%E8%BC%AA-645499fd4647d.jpg)
 - **21:00 ｜ 視覺盛宴：倫敦大劇院**
   - 餐後入座劇院，觀賞百老匯級別的華麗歌舞秀，為璀璨的一天畫下完美句點。
 
@@ -155,16 +201,22 @@
 
 最後一個全天航海日，以最慢的步調，把還沒體驗到的美好再溫習一遍。
 
+![陽台早餐](https://i0.wp.com/wanchen-travel.com/wp-content/uploads/2024/03/msc-open-air-theater-3.jpeg?resize=1024%2C768&ssl=1)
+
 - **日間自由活動 ｜ 海上慢享時光**
   - 在艙房陽台，伴著太平洋的海浪聲享用客房早餐。午後前往賭場試試手氣，或在甲板躺椅上吹著海風，享受與家人齊聚的無價時光。
+    ![水晶階梯](https://lh3.googleusercontent.com/proxy/fDQ-pYjinaNiLPjVNTyF18hJYzjhCILEKSL4CeoT2wTEP4fSxf9icEuFl7Y79wtpvD0akYCQ-iftkMSYzR48YNRl6zM2f3GQDaLcdVmS-d4HJZpFW2CW0Q8)
 - **20:00 ｜ 華麗謝幕：船長告別晚宴**
   - 換上最滿意的服裝，沉浸在熱鬧的義大利風情之夜中。
+    ![行李打包](https://cdn2.ettoday.net/images/821/d821409.jpg)
 - **22:00 ｜ 【關鍵時間】優雅打包**
   - **專屬管家視角**：今晚將大件行李打包並掛上行李條置於房外。**千萬別忘了：將明早下船的衣物、貴重物品與寶貝的隨身用品，安穩地留在手提包內！**
 
 ---
 
 ## 📅 Day 8 (6/13) ｜ 🚗 溫柔賦歸：滿載無價回憶
+
+![機場回程](https://img.ltn.com.tw/Upload/news/600/2024/12/11/4890784_1_1.jpg)
 
 - **06:00 ｜ 晨曦抵港：基隆港**
   - 清晨，榮耀號緩緩駛入熟悉的基隆港。享用完最後一頓豐盛早餐後，憑藉鑽石會員的**「優先下船」**特權，從容不迫地通關。
