@@ -1,13 +1,14 @@
 # 現狀規格書 (Project Baseline)
 
 ## 1. 系統架構概述 (System Architecture Overview)
-本專案目前為一個純前端的靜態單頁/多頁式網站 (Static Single/Multi-Page Application)，主要用於展示「富士山・地中海郵輪 8天7夜」的專屬行程表。
-- **核心技術**：純 HTML5 + CSS3 + 輕量 Vanilla JS。
+本專案已從純靜態 HTML 檔案維護模式，轉型為基於 Python 的靜態網站生成器 (SSG) 模式。
+- **核心技術**：Python (`build.py`) + 純 HTML5 + CSS3 + 輕量 Vanilla JS。
 - **部署模式**：靜態網頁託管 (Static Hosting)。
 - **檔案結構**：
-  - `index.html`：主行程表入口頁面（使用深色/高質感 Editorial Design 主題）。
-  - `new.html`：行程表替代版本。
-  - `journey.md` / `docs/design_proposal.md`：原始文案與設計提案規格。
+  - `journey.md`：全站唯一的內容資料庫與單一真相來源 (Source of Truth)。
+  - `program/build.py`：核心產生器，負責讀取 `journey.md` 並套用模板。
+  - `template.html`：網頁視覺樣式骨架，包含預留的插入標籤 (`<!-- CONTENT_PLACEHOLDER -->`)。
+  - `index.html`：由 `build.py` 自動生成的最終編譯產物，不建議手動修改。
 
 ## 2. 資料庫/資料表 Schema (Database Schema)
 目前為**無資料庫架構 (Serverless / No Database)**。
@@ -53,3 +54,9 @@
 - **高轉換率設計機制 (FOMO & Premium UI)**
   - 依照 `design_proposal.md`，使用高對比度的色彩（如 `--accent-color: #C5A059`）。
   - 將一般行程轉化為「管家視角」與「限時限量」的文案提示 (`.note.calm` 等組件)，強化沉浸感與急迫感。
+
+## 5. 靜態生成器編譯規則 (Static Generator Build Rules)
+- **讀取解析**：系統 (`build.py`) 能讀取 `journey.md` 檔案，依據天數 (`Day 1`, `Day 2` 等) 分段提取關聯的事件資料。
+- **圖片語法**：支援在行程事件的正上方使用 `![alt](url)` 宣告展示圖片。腳本會自動將其與緊接的事件封裝為包含圖片的 `.card`。若無圖片則產出純文字卡片。
+- **地圖語法**：支援在單日行程區塊的尾端使用 `🗺️ [地圖標題](Google Maps 網址)` 語法。系統會自動濾除過多中繼點的雜訊，並在 `.day-content` 結尾處生成導航按鈕與預覽 `<iframe>`。
+- **模板套用**：將解析後的 HTML 內容字串，注入到 `template.html` 的 `<!-- CONTENT_PLACEHOLDER -->` 位置，輸出為 `index.html`。
