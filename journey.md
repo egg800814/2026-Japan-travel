@@ -1,4 +1,4 @@
-# 🌟 御用私房・尊爵啟航｜富士山絕景與 MSC 榮耀號 高訂私旅
+﻿# 🌟 御用私房・尊爵啟航｜富士山絕景與 MSC 榮耀號 高訂私旅
 
 > 「真正的奢華，是讓每一位家人都擁有從容的微笑。
 > 我們為六個月大的寶貝預留了安睡的空間，為長輩打點了無需排隊的極上盛宴。
@@ -65,26 +65,35 @@
     ![本町二丁目商店街](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSctuqutOzb5nwOMkwTyHgu9QpRHYKbhFGv3A&s)
 - **09:40 - 10:00 ｜ 📸 昭和光影：ほんちょう２丁目商店街 (本町二丁目)**
   - **完美動線**：前往神社前順路停靠！復古街道的盡頭矗立著巨大的富士山，視覺震撼力極強。下車輕鬆散步 15 分鐘，隨手一按都是宛如電影海報的家族大片。
+    ![鳥居](https://fujiyoshida.net/image/rendering/attraction_image/104/trim.640/3/2?v=409b27d21eaa77dbd17ff4dff7179cbb3fd7ec16)
+- **10:00 - 10:15 ｜ ⛩️ 信仰之門：金鳥居**
+  - **感官體驗**：漫步穿越這座標誌性的巨大鳥居，彷彿跨越俗世與神域的交界。仰望大鳥居與富士山同框的壯麗景致，在導遊的解說下，感受昔日「富士講」信徒的虔誠之心，隨手一拍都是充滿歷史底蘊的全家福。
+    ![御師](https://fujiyoshida.net/image/rendering/attraction_image/112/trim.640/3/2?v=340a3a5e03d97cdd492c0a76b843c1d00dcfb79e)
+- **10:15 - 10:50 ｜ 🕰️ 穿越江戶：御師舊外川家住宅**
+  - **感官體驗**：走進這座擁有數百年歷史的世界文化遺產，踩在古老的木地板上，木頭的溫潤與歷史的氣息讓人平靜。聆聽導遊娓娓道來當年御師為朝聖者安排食宿的生動故事，讓這趟旅行不只是看風景，更是一場深度的文化穿越。
+- **10:50 - 11:00 ｜ 🍵 歇息片刻：御師町休息處 Infomation center**
+  - **專屬管家視角**：一行 11 人加上嬰兒漫步了一小段路後，正好在此稍作喘息。這裡提供豐富的在地資訊與洗手間，長輩能坐下喝口水休息，同時也能為小寶貝整理一下推車與裝備，為接下來的神社參拜補足精神。
     ![神社](https://fujiyoshida.net/image/rendering/attraction_image/101/trim.1024/3/2?v=48acc2d56dd7d73dfa7706d44c2de2a2156fe1da)
-- **10:00 - 11:30 ｜ 沐浴芬多精：北口本宮富士淺間神社**
+- **11:00 - 11:30 ｜ 🌲 沐浴芬多精：北口本宮富士淺間神社**
   - **五感體驗**：推著嬰兒車，漫步在平緩的無障礙參道上。巨木參天，微風拂過，全家人在這裡吸收滿滿的芬多精，雙手合十，祈求歲月靜好、旅途平安。
     ![炸豬排](https://www.porta-y.jp/wp-content/uploads/2024/10/tonkatsu-genroku-241016-3.jpg)
 - **11:35 - 13:10 ｜ 酥脆誘惑：とんかつ 元祿（在地極品炸豬排）**
   - **完美動線**：逛完神社上車，短短 2 分鐘即可入座老店，完美避開正午人潮。
   - **五感體驗**：咬下外酥內嫩的極品炸豬排，喀滋聲中是傳承多年的職人火候，軟嫩肉質讓長輩也能輕鬆大快朵頤！寬敞的榻榻米區讓全家能大口扒著白飯，感受最純粹的滿足。
     ![忍野八海](https://static.gltjp.com/glt/data/directory/12000/11258/20201026_053312_589e6620_w1920.webp)
-- **13:40 - 15:00 ｜ 澄澈藍寶石：忍野八海**
+- **13:40 - 15:20 ｜ 澄澈藍寶石：忍野八海**
   - **感官體驗**：富士山的雪水經過層層過濾湧出，水池清澈見底。
   - **專屬管家視角**：此處遊客熙攘，建議將嬰兒推車留在專車上，用溫暖的背巾揹著小寶貝漫步，享受極高的機動性與貼身的安全感。
-    ![平野之濱](https://sliptojapan.com/wp-content/uploads/2025/04/fujisan-kawaguchiko-spot_%E5%B1%B1%E4%B8%AD%E6%B9%96%E5%B9%B3%E9%87%8E%E3%81%AE%E6%B5%9C-AC.jpeg)
-- **15:20 - 16:30 ｜ 私房絕景：山中湖 平野之濱**
-  - **五感體驗**：轉往人煙稀少的私房秘境。讓小寶貝看著湖畔優雅的白天鵝，幸運的話，將天鵝與巨大富士山同框，拍下毫無干擾的夢幻全家福。湖畔微風輕拂，記得為家人披上一件防風外套。
+    ![天鵝遊](https://static.gltjp.com/glt/data/directory/13000/12108/20210831_085132_50cf2629_w1920.webp)
+- **15:45 - 16:40 ｜ 湖上優雅航行：山中湖 白鳥の湖（天鵝遊覽船）**
+  - **五感體驗**：全家人一起登上造型夢幻的巨大白鳥遊覽船！隨著船隻平穩地劃開湖面，迎面而來的是山中湖清涼舒爽的微風。讓小寶貝在寬敞的甲板上，以毫無遮蔽的絕佳水上視角將壯麗的富士山盡收眼底，拍下最獨特的夢幻全家福。
+  - **專屬管家視角**：白鳥號的內部空間設計對推車極度友善，長輩也能免去步行的疲累，輕鬆享受無死角的湖光山色。湖面航行時風勢較為明顯，走到室外甲板賞景時，別忘了為家人披上一件防風外套。
     ![購物與晚餐](https://images.unsplash.com/photo-1578916171728-46686eac8d58?q=80&w=800&auto=format&fit=crop)
-- **17:00 - 19:00 ｜ 滿載而歸：BELL 購物中心 / Gusto 家庭餐廳**
+- **17:20 - 19:20 ｜ 滿載而歸：BELL 購物中心 / Gusto 家庭餐廳**
   - **一站式滿足**：順路返回市區，長輩可優雅漫步於商場超市與藥妝店，先行採買這幾天在 Villa 共享的零嘴或部分伴手禮。
-  - **輕鬆晚宴**：在空間寬敞、對推車極度友善的 Gusto 家庭餐廳，用平板無壓力點餐。19:15 帶著豐碩的戰利品回到 Villa，享受靜謐的富士山夜色，為明日的河口湖環湖之旅儲備滿滿能量。
+  - **輕鬆晚宴**：在空間寬敞、對推車極度友善的 Gusto 家庭餐廳，用平板無壓力點餐。19:30 帶著豐碩的戰利品回到 Villa，享受靜謐的富士山夜色，為明日的河口湖環湖之旅儲備滿滿能量。
 
-🗺️ [開啟 Day 2 行程導航地圖](https://www.google.com/maps/dir/Fuji+Grand+Villa+-+Toki,+2855-1+Arakura,+Fujiyoshida,+Yamanashi+403-0011%E6%97%A5%E6%9C%AC/Honcho+2-chome+Shopping+District,+2+Chome-6+Shimoyoshida,+Fujiyoshida,+Yamanashi+403-0004%E6%97%A5%E6%9C%AC/%E5%8C%97%E5%8F%A3%E6%9C%AC%E5%AE%AE%E5%AF%8C%E5%A3%AB%E6%B7%BA%E9%96%93%E7%A5%9E%E7%A4%BE+%E6%97%A5%E6%9C%AC%E3%80%92403-0005+Yamanashi,+Fujiyoshida,+Kamiyoshida,+5558/%E5%85%83%E7%A5%BF+%E6%97%A5%E5%BC%8F%E7%82%B8%E8%B1%AC%E6%8E%92%E7%89%9B%E6%8E%92+%E6%97%A5%E6%9C%AC%E3%80%92403-0005+Yamanashi,+Fujiyoshida,+Kamiyoshida,+7+Chome%E2%88%923%E2%88%922/%E5%BF%8D%E9%87%8E%E5%85%AB%E6%B5%B7+%E6%97%A5%E6%9C%AC%E3%80%92401-0511+Yamanashi,+Minamitsuru+District,+Oshino,+Shibokusa/%E5%B9%B3%E9%87%8E%E4%B9%8B%E6%BF%B1+%E6%97%A5%E6%9C%AC%E3%80%92401-0502+Yamanashi,+Minamitsuru+District,+Yamanakako,+Hirano,+13/Kawaguchiko+Shopping+Center+BELL,+2986+Funatsu,+Fujikawaguchiko,+Minamitsuru+District,+Yamanashi+401-0301%E6%97%A5%E6%9C%AC/Fuji+Grand+Villa+-+Toki,+2855-1+Arakura,+Fujiyoshida,+Yamanashi+403-0011%E6%97%A5%E6%9C%AC/@35.4571226,138.7915649,13z/data=!3m1!5s0x601960867bfb72e1:0xc23f598143f154a8!4m50!4m49!1m5!1m1!1s0x601961a3f7b29a03:0x12722641fcadcda5!2m2!1d138.7751199!2d35.4895702!1m5!1m1!1s0x601967004c5219d1:0x5e58c75ce320b621!2m2!1d138.8038045!2d35.4926106!1m5!1m1!1s0x60196129b1baaaab:0x351d81311ed09dfe!2m2!1d138.7922637!2d35.470696!1m5!1m1!1s0x601960d58d48743b:0x6d62476c6f4c3d21!2m2!1d138.7959515!2d35.4742438!1m5!1m1!1s0x601966859f99842b:0x163aa46bb0af9f71!2m2!1d138.8324741!2d35.4600675!1m5!1m1!1s0x60196fec8ed01c37:0xaea15f41d50a234a!2m2!1d138.9008237!2d35.4247002!1m5!1m1!1s0x6019608678979297:0x4aa43d805feed8bc!2m2!1d138.7641792!2d35.4899091!1m5!1m1!1s0x601961a3f7b29a03:0x12722641fcadcda5!2m2!1d138.7751199!2d35.4895702!3e0?hl=zh-TW&entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D)
+🗺️ [開啟 Day 2 行程導航地圖](https://www.google.com/maps/dir/Fuji+Grand+Villa+-+Toki,+2855-1+Arakura,+Fujiyoshida,+Yamanashi+403-0011%E6%97%A5%E6%9C%AC/Honcho+2-chome+Shopping+District,+2+Chome-6+Shimoyoshida,+Fujiyoshida,+Yamanashi+403-0004%E6%97%A5%E6%9C%AC/Oshi-machi+Rest+Area+%26+Information+Center,+3+Chome-14-10+Kamiyoshida,+Fujiyoshida,+Yamanashi+403-0005%E6%97%A5%E6%9C%AC/%E5%8C%97%E5%8F%A3%E6%9C%AC%E5%AE%AE%E5%AF%8C%E5%A3%AB%E6%B7%BA%E9%96%93%E7%A5%9E%E7%A4%BE+%E6%97%A5%E6%9C%AC%E3%80%92403-0005+Yamanashi,+Fujiyoshida,+Kamiyoshida,+5558/%E5%85%83%E7%A5%BF+%E6%97%A5%E5%BC%8F%E7%82%B8%E8%B1%AC%E6%8E%92%E7%89%9B%E6%8E%92+%E6%97%A5%E6%9C%AC%E3%80%92403-0005+Yamanashi,+Fujiyoshida,+Kamiyoshida,+7+Chome%E2%88%923%E2%88%922/%E5%BF%8D%E9%87%8E%E5%85%AB%E6%B5%B7+%E6%97%A5%E6%9C%AC%E3%80%92401-0511+Yamanashi,+Minamitsuru+District,+Oshino,+Shibokusa/%E5%B1%B1%E4%B8%AD%E6%B9%96%E8%A7%80%E5%85%89%E8%88%B9+%E6%97%A5%E6%9C%AC%E3%80%92401-0502+Yamanashi,+Minamitsuru+District,+Yamanakako,+Hirano,+506-1/Kawaguchiko+Shopping+Center+BELL,+2986+Funatsu,+Fujikawaguchiko,+Minamitsuru+District,+Yamanashi+401-0301%E6%97%A5%E6%9C%AC/@35.4495412,138.7609701,12.75z/data=!3m1!5s0x601960867bfb72e1:0xc23f598143f154a8!4m50!4m49!1m5!1m1!1s0x601961a3f7b29a03:0x12722641fcadcda5!2m2!1d138.7751199!2d35.4895702!1m5!1m1!1s0x601967004c5219d1:0x5e58c75ce320b621!2m2!1d138.8038045!2d35.4926106!1m5!1m1!1s0x601960d603a7c917:0xaafb7eb3cf186277!2m2!1d138.7963318!2d35.4803779!1m5!1m1!1s0x60196129b1baaaab:0x351d81311ed09dfe!2m2!1d138.7922637!2d35.470696!1m5!1m1!1s0x601960d58d48743b:0x6d62476c6f4c3d21!2m2!1d138.7959515!2d35.4742438!1m5!1m1!1s0x601966859f99842b:0x163aa46bb0af9f71!2m2!1d138.8324741!2d35.4600675!1m5!1m1!1s0x60196559bc0470ed:0xaacdb0198d85e3ce!2m2!1d138.8766266!2d35.4081944!1m5!1m1!1s0x6019608678979297:0x4aa43d805feed8bc!2m2!1d138.7641792!2d35.4899091!3e0?hl=zh-TW&entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D)
 
 ---
 
