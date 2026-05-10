@@ -101,37 +101,30 @@
 
 - **08:30 ｜ 從容啟程：晨光與微風**
   - **專屬管家視角**：相較昨日稍微提早出發，我們將搶佔河口湖最清幽的早晨時光，完美避開週末的觀光人潮，享受屬於家族的寧靜。
-    ![富士山景觀纜車](https://www.settour.com.tw/ss_img/info/location/YMN/N0/YMN0000025/YMN0000025_41769.jpg)
-- **08:45 - 10:15 ｜ 絕景盡收：富士山景觀纜車**
-  - **五感體驗**：趁著剛營業的通透空氣，我們躍上高空。此時的光線最為純粹，是拍下全家福大片的魔幻時刻。
-  - **專屬管家視角**：因纜車動線考量，建議將嬰兒推車暫時換成揹巾，將小寶貝溫暖地擁在懷中，機動性更高。
+    ![富岳風穴](https://www.mtfuji-cave.com/contents/common/images/wind_cave/p_wind02l.jpg)
+- **09:00 - 09:45 ｜ 探秘自然：富岳風穴**
+  - **五感體驗**：走入被茂密青木原樹海包圍的天然冷氣房。這裡的步道相對平緩寬敞，長輩也能輕鬆漫步，感受大自然玄武岩洞穴帶來的沁涼與神祕氣息。
+    ![鳴澤冰穴](https://www.mtfuji-cave.com/contents/common/images/ice_cave/p_ice05l.jpg)
+- **09:55 - 10:45 ｜ 冰雪奇緣：鳴澤冰穴 (彈性分流)**
+  - **專屬管家視角**：由於冰穴內部階梯較為狹窄濕滑且需彎腰行走，我們在此採取最體貼的分流安排！充滿活力的年輕成員可購票入內探險，欣賞終年不化的冰柱奇景；長輩與推著小寶貝的家人，則可在洞外的休息區愜意小憩，享受微風與悠閒的等待時光。
+    ![ほうとう不動](https://pic.pimg.tw/giniechou/1702996282-139141350-g.jpg)
+- **11:30 - 13:00 ｜ 暖胃首選：ほうとう不動 東恋路店**
+  - **完美動線**：經過早上的洞穴探險，乘車約 20 分鐘來到這棟宛如降落在富士山腳下「白雲」般的純白建築。
+  - **五感體驗**：提早入座免去排隊之苦。在採光極佳、挑高且充滿藝術感的圓弧形空間內，全家共享一鍋熱呼呼的蔬菜餺飥麵。建築外觀更是絕佳的拍照背景，藍天、白雲建築與富士山相映成趣。
     ![FUJIYAMA COOKIE](https://www.fujiyamacookie.jp/product/a6808900000001ge-img/DSC03529.jpg)
-- **10:15 - 10:25 ｜ 伴手禮採買：FUJIYAMA COOKIE**
-  - **完美動線**：漫步下山，剛好迎上店鋪大門敞開。花 10 分鐘挑選那散發著嚴選奶油香氣的富士山造型餅乾，將美好的心意提上車。
-    ![天晴號遊覽船](https://static.gltjp.com/glt/data/directory/13000/12079/20210826_141254_3028f3a9_w1920.webp)
-- **10:30 - 11:00 ｜ 水色巡禮：天晴號遊覽船 (機動彈性)**
-  - **五感體驗**：在對面碼頭登船，微風徐徐，波光粼粼。為行程保留最高彈性，若提早結束便悠然前往下一站。
-    ![富士山吐司](https://s.yimg.com/ny/api/res/1.2/LpJhlgUTo5j9k8500oE.Ow--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTgwMA--/https://media.zenfs.com/en/homita_556/409873cec4793ffea7f178fbbde6d120)
-- **11:05 - 11:20 ｜ 私房香氣：食パン専門店 FUJISAN SHOKUPAN**
-  - **完美動線**：精準踩點開店時刻！派代表將心心念念、藍白相間的「富士山夢幻吐司」買齊，車廂內瞬間滿溢著幸福的碳水香氣。
-    ![ほうとう不動](https://img.bigfang.tw/2025/04/1744638082-4efdd2f969559e8b1c92e99f32ded48e.jpg)
-- **11:30 - 13:30 ｜ 暖胃首選：ほうとう不動 河口湖北本店**
-  - **五感體驗**：提早入座，免去排隊之苦。在寬敞的傳統木造榻榻米上，大人們脫鞋徹底舒展雙腿，小寶貝也能在安全的軟墊上自在翻滾。全家共享一鍋熱呼呼的蔬菜餺飥麵，暖胃更暖心。
+- **13:10 - 13:30 ｜ 伴手禮採買：FUJIYAMA COOKIE**
+  - **五感體驗**：飽餐一頓後乘車順遊，花 20 分鐘挑選那散發著嚴選奶油香氣的富士山造型餅乾，將美好的心意提上車，為下午的行程增添一絲甜蜜。
     ![河口湖音樂盒之森美術館](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLzBzuLgWgTe-RLGwflWHdgo-Nn0HK5RSxEw&s)
 - **13:45 - 15:15 ｜ 歐洲風情：河口湖音樂盒之森美術館**
   - **感官體驗**：餐後的完美散策。推著嬰兒車在平緩的無障礙步道上漫步，充滿歐洲風情的庭園建築交織著優雅的音樂盒旋律，步調不自覺地慢了下來。
     ![大石公園](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0l8fBKQUXioi-MtVPjik3UpAuGpHlXJPgcQ&s)
 - **15:25 - 16:25 ｜ 花海漫步：大石公園**
   - **五感體驗**：漫步湖畔自然花海，以真正的壯麗富士為背景，拿出早晨買的富士山吐司，拍下極具巧思且充滿歡笑的家族打卡照。
-    ![Lawson 河口湖役場前店](https://media.nownews.com/nn_media/thumbnail/2022/06/1655168938906-e71d9deea0ef418d8cf0d10b13f3d696-800x532.jpg)
-- **16:40 - 17:00 ｜ 餘暉獨享：Lawson 河口湖役場前店 (機動插入點)**
-  - **專屬管家視角**：將網紅打卡點移至午後！此時光線柔和，且該店腹地寬廣，商務車停妥後，推著嬰兒車也能安全從容地拍出絕美照片，完全無需與人推擠。
     ![和牛燒肉](https://s3.ap-northeast-1.amazonaws.com/hpr.ravenhp.com/2b9eec7c0b1/images/be7c7ccf392c6a94843743770257489c0a5c7753)
 - **17:00 - 18:30 ｜ 極致和牛盛宴：富士の食事處 白米 與優雅返程**
   - **五感體驗**：17:00 準時入座極具傳統日式風情的「富士の食事處 白米」。看著窗外雅緻的日式庭園景觀，品嚐入口即化的 A5 等級甲州和牛（無論是濃郁的壽喜燒或香氣四溢的富士山熔岩烤），搭配頂級越光米。長輩能在沉穩優雅的空間內，愜意享受這頓精緻奢華的在地饗宴。
-  - **專屬管家視角**：在味蕾獲得極致滿足後，乘車輕鬆返回 Villa。今晚可在熱水中徹底舒展身心，並從容地整理行囊，帶著對陸地絕景與甲州美食的不捨與滿足，期待明日告別富士山，迎向東京灣畔的豪華郵輪嶄新航程。
 
-🗺️ [開啟 Day 3 行程未導航地圖](<https://www.google.com/maps/dir/Fuji+Grand+Villa+-+Toki,+2855-1+Arakura,+Fujiyoshida,+Yamanashi+403-0011%E6%97%A5%E6%9C%AC/%E6%B2%B3%E5%8F%A3%E6%B9%96+%E5%AF%8C%E5%A3%AB%E5%B1%B1%E7%BA%9C%E8%BB%8A+%E6%97%A5%E6%9C%AC%E3%80%92401-0303+Yamanashi,+Minamitsuru+District,+Fujikawaguchiko,+Azagawa,+1163-1/%E6%B2%B3%E5%8F%A3%E6%B9%96%E9%81%8A%E8%A6%BD%E8%88%B9+%E5%A4%A9%E6%99%B4+%E6%97%A5%E6%9C%AC%E3%80%92401-0301+Yamanashi,+Minamitsuru+District,+Fujikawaguchiko,+Funatsu,+4034/Fujisan+Shokupan,+3462-11+Funatsu,+Fujikawaguchiko,+Minamitsuru+District,+Yamanashi+401-0301%E6%97%A5%E6%9C%AC/%E3%81%BB%E3%81%86%E3%81%A8%E3%81%86+(%E9%A4%BA%E9%A3%A5)+%E4%B8%8D%E5%8B%95+%E6%B2%B3%E5%8F%A3%E6%B9%96%E5%8C%97%E6%9C%AC%E5%BA%97+%E6%97%A5%E6%9C%AC%E3%80%92401-0304+Yamanashi,+Minamitsuru+District,+Fujikawaguchiko,+Kawaguchi,+707/%E6%B2%B3%E5%8F%A3%E6%B9%96+%E9%9F%B3%E6%A8%82%E6%A3%AE%E6%9E%97%E7%BE%8E%E8%A1%93%E9%A4%A8+%E6%97%A5%E6%9C%AC%E3%80%92401-0304+Yamanashi,+Minamitsuru+District,+Fujikawaguchiko,+Kawaguchi,+3077-20/%E5%A4%A7%E7%9F%B3%E5%85%AC%E5%9C%92+%E6%97%A5%E6%9C%AC%E3%80%92401-0305+Yamanashi,+Minamitsuru+District,+Fujikawaguchiko,+Oishi,+%EF%BC%92%EF%BC%95%EF%BC%92%EF%BC%95%E7%95%AA%E5%9C%B0%E3%81%AE%EF%BC%91%EF%BC%91%E5%85%88/Classic+Japanese+Restaurant+HAKUMAI,+%E6%97%A5%E6%9C%AC%E3%80%92403-0031+Yamanashi,+Fujiyoshida,+Asama,+2-chome%E2%88%922%E2%88%925+%E3%80%90%E5%AF%8C%E5%A3%AB%E5%90%89%E7%94%B0%E5%B8%82%E3%83%BB%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%83%BB%E5%92%8C%E9%A3%9F%E3%80%91/@35.5075875,138.7516204,14z/data=!3m1!4b1!4m50!4m49!1m5!1m1!1s0x601961a3f7b29a03:0x12722641fcadcda5!2m2!1d138.7751199!2d35.4895702!1m5!1m1!1s0x60195e268ba95555:0x4fa724d1d92f7142!2m2!1d138.7720895!2d35.5040321!1m5!1m1!1s0x60195e261295efe3:0x1dec70d1d1d2f871!2m2!1d138.7705446!2d35.5037283!1m5!1m1!1s0x60195f06da758745:0x9df03613887026a2!2m2!1d138.76518!2d35.4988872!1m5!1m1!1s0x60195e46cea28b6f:0xcdc11d4beec44cd9!2m2!1d138.7737268!2d35.5226981!1m5!1m1!1s0x60195e4f455690bf:0xcc5aa17825df4a75!2m2!1d138.768715!2d35.5224188!1m5!1m1!1s0x60195fa68c0b2b95:0xa22e530b3a652904!2m2!1d138.7457522!2d35.522904!1m5!1m1!1s0x6019612d0d1edd09:0xf522b86422f0cc5f!2m2!1d138.7992176!2d35.4984536!3e0?hl=zh-TW&entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D>)
+🗺️ [開啟 Day 3 行程未導航地圖](<https://www.google.com/maps/dir/Fuji+Grand+Villa+-+Toki,+2855-1+Arakura,+Fujiyoshida,+Yamanashi+403-0011%E6%97%A5%E6%9C%AC/%E5%AF%8C%E5%B2%B3%E9%A2%A8%E7%A9%B4,+%E6%97%A5%E6%9C%AC%E3%80%92401-0332+Yamanashi,+Minamitsuru+District,+Fujikawaguchiko,+Saiko,+%E9%9D%92%E6%9C%A8%E3%83%B6%E5%8E%9F%EF%BC%92%EF%BC%90%EF%BC%96%EF%BC%98%E2%88%92%EF%BC%91/Hoto+Fudo+(Higashikoiji),+%E6%9D%B1-%E6%81%8B%E8%B7%AF-2458+Funatsu,+Fujikawaguchiko,+Minamitsuru+District,+Yamanashi+401-0301%E6%97%A5%E6%9C%AC/FUJIYAMA+COOKIE+%E6%97%A5%E6%9C%AC%E3%80%92401-0303+Yamanashi,+Minamitsuru+District,+Fujikawaguchiko,+Azagawa,+1165-1/%E6%B2%B3%E5%8F%A3%E6%B9%96+%E9%9F%B3%E6%A8%82%E6%A3%AE%E6%9E%97%E7%BE%8E%E8%A1%93%E9%A4%A8+%E6%97%A5%E6%9C%AC%E3%80%92401-0304+Yamanashi,+Minamitsuru+District,+Fujikawaguchiko,+Kawaguchi,+3077-20/%E5%A4%A7%E7%9F%B3%E5%85%AC%E5%9C%92+%E6%97%A5%E6%9C%AC%E3%80%92401-0305+Yamanashi,+Minamitsuru+District,+Fujikawaguchiko,+Oishi,+%EF%BC%92%EF%BC%95%EF%BC%92%EF%BC%95%E7%95%AA%E5%9C%B0%E3%81%AE%EF%BC%91%EF%BC%91%E5%85%88/Classic+Japanese+Restaurant+HAKUMAI,+%E6%97%A5%E6%9C%AC%E3%80%92403-0031+Yamanashi,+Fujiyoshida,+Asama,+2-chome%E2%88%922%E2%88%925+%E3%80%90%E5%AF%8C%E5%A3%AB%E5%90%89%E7%94%B0%E5%B8%82%E3%83%BB%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%83%BB%E5%92%8C%E9%A3%9F%E3%80%91/@35.5328579,138.6153614,11.75z/data=!4m44!4m43!1m5!1m1!1s0x601961a3f7b29a03:0x12722641fcadcda5!2m2!1d138.7751199!2d35.4895702!1m5!1m1!1s0x601be0576a66aaab:0x6f86339c79906034!2m2!1d138.6578277!2d35.4776963!1m5!1m1!1s0x60195fd4461c1bfd:0x5753d2ffe8a48b25!2m2!1d138.7570693!2d35.4910536!1m5!1m1!1s0x60195e267d295555:0x5abdfc5fa23d89b0!2m2!1d138.7716668!2d35.5043145!1m5!1m1!1s0x60195e4f455690bf:0xcc5aa17825df4a75!2m2!1d138.768715!2d35.5224188!1m5!1m1!1s0x60195fa68c0b2b95:0xa22e530b3a652904!2m2!1d138.7457522!2d35.522904!1m5!1m1!1s0x6019612d0d1edd09:0xf522b86422f0cc5f!2m2!1d138.7992176!2d35.4984536!3e0?hl=zh-TW&entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D)
 
 ---
 
